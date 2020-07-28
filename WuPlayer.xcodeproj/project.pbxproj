@@ -1,0 +1,840 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7844EF2D24BEAF060011FB14 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7844EF2C24BEAF060011FB14 /* AppDelegate.m */; };
+		7844EF3024BEAF060011FB14 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7844EF2F24BEAF060011FB14 /* SceneDelegate.m */; };
+		7844EF3324BEAF060011FB14 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7844EF3224BEAF060011FB14 /* ViewController.m */; };
+		7844EF3624BEAF060011FB14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7844EF3424BEAF060011FB14 /* Main.storyboard */; };
+		7844EF3824BEAF090011FB14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7844EF3724BEAF090011FB14 /* Assets.xcassets */; };
+		7844EF3B24BEAF090011FB14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7844EF3924BEAF090011FB14 /* LaunchScreen.storyboard */; };
+		7844EF3E24BEAF090011FB14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7844EF3D24BEAF090011FB14 /* main.m */; };
+		7844EF4824BEAF090011FB14 /* WuPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7844EF4724BEAF090011FB14 /* WuPlayerTests.m */; };
+		7844EF5324BEAF090011FB14 /* WuPlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7844EF5224BEAF090011FB14 /* WuPlayerUITests.m */; };
+		7844EF6324BEAF1D0011FB14 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7844EF6224BEAF1D0011FB14 /* NetworkExtension.framework */; };
+		7844EF7A24BEAF820011FB14 /* XDXVPNManagerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7844EF7924BEAF820011FB14 /* XDXVPNManagerModel.m */; };
+		7844EF7D24BEAF910011FB14 /* NetManger.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7844EF7C24BEAF910011FB14 /* NetManger.mm */; };
+		7844EF8024BEAFAA0011FB14 /* NSMutableDictionary+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 7844EF7F24BEAFAA0011FB14 /* NSMutableDictionary+Safe.m */; };
+		7844EF8324BEE0390011FB14 /* XDXVPNManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7844EF8124BEE0380011FB14 /* XDXVPNManager.mm */; };
+		7844F85E24CAAFD20011FB14 /* PacketTunnelProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 7844F85D24CAAFD20011FB14 /* PacketTunnelProvider.m */; };
+		7844F86224CAAFD20011FB14 /* WUTunnelServices.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7844F85824CAAFD20011FB14 /* WUTunnelServices.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		78B0A5F524CEA396004B5413 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7844EF6224BEAF1D0011FB14 /* NetworkExtension.framework */; };
+		78B0A62024D01A8F004B5413 /* WuUrlRetSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B0A61724D01A8F004B5413 /* WuUrlRetSerialization.m */; };
+		78B0A62124D01A8F004B5413 /* WuHttpSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B0A61924D01A8F004B5413 /* WuHttpSessionManager.m */; };
+		78B0A62224D01A8F004B5413 /* WuUrlSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B0A61A24D01A8F004B5413 /* WuUrlSessionManager.m */; };
+		78B0A62324D01A8F004B5413 /* WuSPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B0A61C24D01A8F004B5413 /* WuSPolicy.m */; };
+		78B0A62424D01A8F004B5413 /* WuUrlRespSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B0A61E24D01A8F004B5413 /* WuUrlRespSerialization.m */; };
+		78B0A62724D01B80004B5413 /* WuNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B0A62524D01B80004B5413 /* WuNetManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7844EF4424BEAF090011FB14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7844EF2024BEAF060011FB14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7844EF2724BEAF060011FB14;
+			remoteInfo = WuPlayer;
+		};
+		7844EF4F24BEAF090011FB14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7844EF2024BEAF060011FB14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7844EF2724BEAF060011FB14;
+			remoteInfo = WuPlayer;
+		};
+		7844F86024CAAFD20011FB14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7844EF2024BEAF060011FB14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7844F85724CAAFD20011FB14;
+			remoteInfo = WUTunnelServices;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7844EF7624BEAF5E0011FB14 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7844F86224CAAFD20011FB14 /* WUTunnelServices.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7844EF2824BEAF060011FB14 /* WuPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WuPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7844EF2B24BEAF060011FB14 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7844EF2C24BEAF060011FB14 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7844EF2E24BEAF060011FB14 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		7844EF2F24BEAF060011FB14 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		7844EF3124BEAF060011FB14 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7844EF3224BEAF060011FB14 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7844EF3524BEAF060011FB14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7844EF3724BEAF090011FB14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7844EF3A24BEAF090011FB14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7844EF3C24BEAF090011FB14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7844EF3D24BEAF090011FB14 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7844EF4324BEAF090011FB14 /* WuPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WuPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7844EF4724BEAF090011FB14 /* WuPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WuPlayerTests.m; sourceTree = "<group>"; };
+		7844EF4924BEAF090011FB14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7844EF4E24BEAF090011FB14 /* WuPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WuPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7844EF5224BEAF090011FB14 /* WuPlayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WuPlayerUITests.m; sourceTree = "<group>"; };
+		7844EF5424BEAF090011FB14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7844EF6024BEAF1D0011FB14 /* WuPlayer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WuPlayer.entitlements; sourceTree = "<group>"; };
+		7844EF6224BEAF1D0011FB14 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		7844EF7824BEAF820011FB14 /* XDXVPNManagerModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XDXVPNManagerModel.h; sourceTree = "<group>"; };
+		7844EF7924BEAF820011FB14 /* XDXVPNManagerModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XDXVPNManagerModel.m; sourceTree = "<group>"; };
+		7844EF7B24BEAF910011FB14 /* NetManger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetManger.h; sourceTree = "<group>"; };
+		7844EF7C24BEAF910011FB14 /* NetManger.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = NetManger.mm; sourceTree = "<group>"; };
+		7844EF7E24BEAFAA0011FB14 /* NSMutableDictionary+Safe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Safe.h"; sourceTree = "<group>"; };
+		7844EF7F24BEAFAA0011FB14 /* NSMutableDictionary+Safe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Safe.m"; sourceTree = "<group>"; };
+		7844EF8124BEE0380011FB14 /* XDXVPNManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = XDXVPNManager.mm; sourceTree = "<group>"; };
+		7844EF8224BEE0380011FB14 /* XDXVPNManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDXVPNManager.h; sourceTree = "<group>"; };
+		7844F85824CAAFD20011FB14 /* WUTunnelServices.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WUTunnelServices.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7844F85B24CAAFD20011FB14 /* WUTunnelServices.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = WUTunnelServices.entitlements; path = ../WUTunnelServices.entitlements; sourceTree = "<group>"; };
+		7844F85C24CAAFD20011FB14 /* PacketTunnelProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PacketTunnelProvider.h; sourceTree = "<group>"; };
+		7844F85D24CAAFD20011FB14 /* PacketTunnelProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PacketTunnelProvider.m; sourceTree = "<group>"; };
+		7844F85F24CAAFD20011FB14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78B0A61624D01A8F004B5413 /* WuHttpSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WuHttpSessionManager.h; sourceTree = "<group>"; };
+		78B0A61724D01A8F004B5413 /* WuUrlRetSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WuUrlRetSerialization.m; sourceTree = "<group>"; };
+		78B0A61824D01A8F004B5413 /* WuUrlSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WuUrlSessionManager.h; sourceTree = "<group>"; };
+		78B0A61924D01A8F004B5413 /* WuHttpSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WuHttpSessionManager.m; sourceTree = "<group>"; };
+		78B0A61A24D01A8F004B5413 /* WuUrlSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WuUrlSessionManager.m; sourceTree = "<group>"; };
+		78B0A61B24D01A8F004B5413 /* WuUrlRespSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WuUrlRespSerialization.h; sourceTree = "<group>"; };
+		78B0A61C24D01A8F004B5413 /* WuSPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WuSPolicy.m; sourceTree = "<group>"; };
+		78B0A61D24D01A8F004B5413 /* WuUrlRetSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WuUrlRetSerialization.h; sourceTree = "<group>"; };
+		78B0A61E24D01A8F004B5413 /* WuUrlRespSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WuUrlRespSerialization.m; sourceTree = "<group>"; };
+		78B0A61F24D01A8F004B5413 /* WuSPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WuSPolicy.h; sourceTree = "<group>"; };
+		78B0A62524D01B80004B5413 /* WuNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WuNetManager.m; sourceTree = "<group>"; };
+		78B0A62624D01B80004B5413 /* WuNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WuNetManager.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7844EF2524BEAF060011FB14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7844EF6324BEAF1D0011FB14 /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7844EF4024BEAF090011FB14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7844EF4B24BEAF090011FB14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7844F85524CAAFD20011FB14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78B0A5F524CEA396004B5413 /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7844EF1F24BEAF060011FB14 = {
+			isa = PBXGroup;
+			children = (
+				7844EF2A24BEAF060011FB14 /* WuPlayer */,
+				7844EF4624BEAF090011FB14 /* WuPlayerTests */,
+				7844EF5124BEAF090011FB14 /* WuPlayerUITests */,
+				7844F85924CAAFD20011FB14 /* WUTunnelServices */,
+				7844EF2924BEAF060011FB14 /* Products */,
+				7844EF6124BEAF1D0011FB14 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7844EF2924BEAF060011FB14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7844EF2824BEAF060011FB14 /* WuPlayer.app */,
+				7844EF4324BEAF090011FB14 /* WuPlayerTests.xctest */,
+				7844EF4E24BEAF090011FB14 /* WuPlayerUITests.xctest */,
+				7844F85824CAAFD20011FB14 /* WUTunnelServices.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7844EF2A24BEAF060011FB14 /* WuPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				78B0A61524D01A52004B5413 /* Net */,
+				7844EF6024BEAF1D0011FB14 /* WuPlayer.entitlements */,
+				7844EF2B24BEAF060011FB14 /* AppDelegate.h */,
+				7844EF2C24BEAF060011FB14 /* AppDelegate.m */,
+				7844EF2E24BEAF060011FB14 /* SceneDelegate.h */,
+				7844EF2F24BEAF060011FB14 /* SceneDelegate.m */,
+				7844EF3124BEAF060011FB14 /* ViewController.h */,
+				7844EF3224BEAF060011FB14 /* ViewController.m */,
+				7844EF7824BEAF820011FB14 /* XDXVPNManagerModel.h */,
+				7844EF7924BEAF820011FB14 /* XDXVPNManagerModel.m */,
+				7844EF8224BEE0380011FB14 /* XDXVPNManager.h */,
+				7844EF8124BEE0380011FB14 /* XDXVPNManager.mm */,
+				7844EF7B24BEAF910011FB14 /* NetManger.h */,
+				7844EF7C24BEAF910011FB14 /* NetManger.mm */,
+				7844EF7E24BEAFAA0011FB14 /* NSMutableDictionary+Safe.h */,
+				7844EF7F24BEAFAA0011FB14 /* NSMutableDictionary+Safe.m */,
+				7844EF3424BEAF060011FB14 /* Main.storyboard */,
+				7844EF3724BEAF090011FB14 /* Assets.xcassets */,
+				7844EF3924BEAF090011FB14 /* LaunchScreen.storyboard */,
+				7844EF3C24BEAF090011FB14 /* Info.plist */,
+				7844EF3D24BEAF090011FB14 /* main.m */,
+			);
+			path = WuPlayer;
+			sourceTree = "<group>";
+		};
+		7844EF4624BEAF090011FB14 /* WuPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				7844EF4724BEAF090011FB14 /* WuPlayerTests.m */,
+				7844EF4924BEAF090011FB14 /* Info.plist */,
+			);
+			path = WuPlayerTests;
+			sourceTree = "<group>";
+		};
+		7844EF5124BEAF090011FB14 /* WuPlayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7844EF5224BEAF090011FB14 /* WuPlayerUITests.m */,
+				7844EF5424BEAF090011FB14 /* Info.plist */,
+			);
+			path = WuPlayerUITests;
+			sourceTree = "<group>";
+		};
+		7844EF6124BEAF1D0011FB14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7844EF6224BEAF1D0011FB14 /* NetworkExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7844F85924CAAFD20011FB14 /* WUTunnelServices */ = {
+			isa = PBXGroup;
+			children = (
+				7844F85C24CAAFD20011FB14 /* PacketTunnelProvider.h */,
+				7844F85D24CAAFD20011FB14 /* PacketTunnelProvider.m */,
+				7844F85F24CAAFD20011FB14 /* Info.plist */,
+				7844F85A24CAAFD20011FB14 /* Supporting Files */,
+			);
+			path = WUTunnelServices;
+			sourceTree = "<group>";
+		};
+		7844F85A24CAAFD20011FB14 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7844F85B24CAAFD20011FB14 /* WUTunnelServices.entitlements */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		78B0A61524D01A52004B5413 /* Net */ = {
+			isa = PBXGroup;
+			children = (
+				78B0A61624D01A8F004B5413 /* WuHttpSessionManager.h */,
+				78B0A61924D01A8F004B5413 /* WuHttpSessionManager.m */,
+				78B0A61F24D01A8F004B5413 /* WuSPolicy.h */,
+				78B0A61C24D01A8F004B5413 /* WuSPolicy.m */,
+				78B0A61B24D01A8F004B5413 /* WuUrlRespSerialization.h */,
+				78B0A61E24D01A8F004B5413 /* WuUrlRespSerialization.m */,
+				78B0A61D24D01A8F004B5413 /* WuUrlRetSerialization.h */,
+				78B0A61724D01A8F004B5413 /* WuUrlRetSerialization.m */,
+				78B0A61824D01A8F004B5413 /* WuUrlSessionManager.h */,
+				78B0A61A24D01A8F004B5413 /* WuUrlSessionManager.m */,
+				78B0A62624D01B80004B5413 /* WuNetManager.h */,
+				78B0A62524D01B80004B5413 /* WuNetManager.m */,
+			);
+			path = Net;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7844EF2724BEAF060011FB14 /* WuPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7844EF5724BEAF090011FB14 /* Build configuration list for PBXNativeTarget "WuPlayer" */;
+			buildPhases = (
+				7844EF2424BEAF060011FB14 /* Sources */,
+				7844EF2524BEAF060011FB14 /* Frameworks */,
+				7844EF2624BEAF060011FB14 /* Resources */,
+				7844EF7624BEAF5E0011FB14 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7844F86124CAAFD20011FB14 /* PBXTargetDependency */,
+			);
+			name = WuPlayer;
+			productName = WuPlayer;
+			productReference = 7844EF2824BEAF060011FB14 /* WuPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7844EF4224BEAF090011FB14 /* WuPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7844EF5A24BEAF090011FB14 /* Build configuration list for PBXNativeTarget "WuPlayerTests" */;
+			buildPhases = (
+				7844EF3F24BEAF090011FB14 /* Sources */,
+				7844EF4024BEAF090011FB14 /* Frameworks */,
+				7844EF4124BEAF090011FB14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7844EF4524BEAF090011FB14 /* PBXTargetDependency */,
+			);
+			name = WuPlayerTests;
+			productName = WuPlayerTests;
+			productReference = 7844EF4324BEAF090011FB14 /* WuPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7844EF4D24BEAF090011FB14 /* WuPlayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7844EF5D24BEAF090011FB14 /* Build configuration list for PBXNativeTarget "WuPlayerUITests" */;
+			buildPhases = (
+				7844EF4A24BEAF090011FB14 /* Sources */,
+				7844EF4B24BEAF090011FB14 /* Frameworks */,
+				7844EF4C24BEAF090011FB14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7844EF5024BEAF090011FB14 /* PBXTargetDependency */,
+			);
+			name = WuPlayerUITests;
+			productName = WuPlayerUITests;
+			productReference = 7844EF4E24BEAF090011FB14 /* WuPlayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		7844F85724CAAFD20011FB14 /* WUTunnelServices */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7844F86324CAAFD20011FB14 /* Build configuration list for PBXNativeTarget "WUTunnelServices" */;
+			buildPhases = (
+				7844F85424CAAFD20011FB14 /* Sources */,
+				7844F85524CAAFD20011FB14 /* Frameworks */,
+				7844F85624CAAFD20011FB14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WUTunnelServices;
+			productName = WUTunnelServices;
+			productReference = 7844F85824CAAFD20011FB14 /* WUTunnelServices.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7844EF2024BEAF060011FB14 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = WU;
+				TargetAttributes = {
+					7844EF2724BEAF060011FB14 = {
+						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
+					};
+					7844EF4224BEAF090011FB14 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 7844EF2724BEAF060011FB14;
+					};
+					7844EF4D24BEAF090011FB14 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 7844EF2724BEAF060011FB14;
+					};
+					7844F85724CAAFD20011FB14 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 7844EF2324BEAF060011FB14 /* Build configuration list for PBXProject "WuPlayer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7844EF1F24BEAF060011FB14;
+			productRefGroup = 7844EF2924BEAF060011FB14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7844EF2724BEAF060011FB14 /* WuPlayer */,
+				7844EF4224BEAF090011FB14 /* WuPlayerTests */,
+				7844EF4D24BEAF090011FB14 /* WuPlayerUITests */,
+				7844F85724CAAFD20011FB14 /* WUTunnelServices */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7844EF2624BEAF060011FB14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7844EF3B24BEAF090011FB14 /* LaunchScreen.storyboard in Resources */,
+				7844EF3824BEAF090011FB14 /* Assets.xcassets in Resources */,
+				7844EF3624BEAF060011FB14 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7844EF4124BEAF090011FB14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7844EF4C24BEAF090011FB14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7844F85624CAAFD20011FB14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7844EF2424BEAF060011FB14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7844EF3324BEAF060011FB14 /* ViewController.m in Sources */,
+				78B0A62424D01A8F004B5413 /* WuUrlRespSerialization.m in Sources */,
+				7844EF7D24BEAF910011FB14 /* NetManger.mm in Sources */,
+				7844EF2D24BEAF060011FB14 /* AppDelegate.m in Sources */,
+				78B0A62024D01A8F004B5413 /* WuUrlRetSerialization.m in Sources */,
+				7844EF8324BEE0390011FB14 /* XDXVPNManager.mm in Sources */,
+				7844EF8024BEAFAA0011FB14 /* NSMutableDictionary+Safe.m in Sources */,
+				7844EF7A24BEAF820011FB14 /* XDXVPNManagerModel.m in Sources */,
+				7844EF3E24BEAF090011FB14 /* main.m in Sources */,
+				78B0A62224D01A8F004B5413 /* WuUrlSessionManager.m in Sources */,
+				78B0A62324D01A8F004B5413 /* WuSPolicy.m in Sources */,
+				78B0A62724D01B80004B5413 /* WuNetManager.m in Sources */,
+				78B0A62124D01A8F004B5413 /* WuHttpSessionManager.m in Sources */,
+				7844EF3024BEAF060011FB14 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7844EF3F24BEAF090011FB14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7844EF4824BEAF090011FB14 /* WuPlayerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7844EF4A24BEAF090011FB14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7844EF5324BEAF090011FB14 /* WuPlayerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7844F85424CAAFD20011FB14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7844F85E24CAAFD20011FB14 /* PacketTunnelProvider.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7844EF4524BEAF090011FB14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7844EF2724BEAF060011FB14 /* WuPlayer */;
+			targetProxy = 7844EF4424BEAF090011FB14 /* PBXContainerItemProxy */;
+		};
+		7844EF5024BEAF090011FB14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7844EF2724BEAF060011FB14 /* WuPlayer */;
+			targetProxy = 7844EF4F24BEAF090011FB14 /* PBXContainerItemProxy */;
+		};
+		7844F86124CAAFD20011FB14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7844F85724CAAFD20011FB14 /* WUTunnelServices */;
+			targetProxy = 7844F86024CAAFD20011FB14 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7844EF3424BEAF060011FB14 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7844EF3524BEAF060011FB14 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7844EF3924BEAF090011FB14 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7844EF3A24BEAF090011FB14 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7844EF5524BEAF090011FB14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7844EF5624BEAF090011FB14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7844EF5824BEAF090011FB14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = WuPlayer/WuPlayer.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = UHREU5H63B;
+				INFOPLIST_FILE = WuPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.microwu.qos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "QoS-Develop";
+				SWIFT_OBJC_BRIDGING_HEADER = "WuPlayer/Tunnel/WuPlayer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7844EF5924BEAF090011FB14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = WuPlayer/WuPlayer.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = UHREU5H63B;
+				INFOPLIST_FILE = WuPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.microwu.qos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "QoS-Develop";
+				SWIFT_OBJC_BRIDGING_HEADER = "WuPlayer/Tunnel/WuPlayer-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7844EF5B24BEAF090011FB14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UHREU5H63B;
+				INFOPLIST_FILE = WuPlayerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MicroWU.WuPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WuPlayer.app/WuPlayer";
+			};
+			name = Debug;
+		};
+		7844EF5C24BEAF090011FB14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UHREU5H63B;
+				INFOPLIST_FILE = WuPlayerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MicroWU.WuPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WuPlayer.app/WuPlayer";
+			};
+			name = Release;
+		};
+		7844EF5E24BEAF090011FB14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UHREU5H63B;
+				INFOPLIST_FILE = WuPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MicroWU.WuPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WuPlayer;
+			};
+			name = Debug;
+		};
+		7844EF5F24BEAF090011FB14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UHREU5H63B;
+				INFOPLIST_FILE = WuPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MicroWU.WuPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WuPlayer;
+			};
+			name = Release;
+		};
+		7844F86424CAAFD20011FB14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WUTunnelServices/WUTunnelServices.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = UHREU5H63B;
+				INFOPLIST_FILE = WUTunnelServices/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.microwu.qos.extention;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "QoS-Extension-Develop";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7844F86524CAAFD20011FB14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WUTunnelServices/WUTunnelServices.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = UHREU5H63B;
+				INFOPLIST_FILE = WUTunnelServices/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.microwu.qos.extention;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "QoS-Extension-Develop";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7844EF2324BEAF060011FB14 /* Build configuration list for PBXProject "WuPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7844EF5524BEAF090011FB14 /* Debug */,
+				7844EF5624BEAF090011FB14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7844EF5724BEAF090011FB14 /* Build configuration list for PBXNativeTarget "WuPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7844EF5824BEAF090011FB14 /* Debug */,
+				7844EF5924BEAF090011FB14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7844EF5A24BEAF090011FB14 /* Build configuration list for PBXNativeTarget "WuPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7844EF5B24BEAF090011FB14 /* Debug */,
+				7844EF5C24BEAF090011FB14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7844EF5D24BEAF090011FB14 /* Build configuration list for PBXNativeTarget "WuPlayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7844EF5E24BEAF090011FB14 /* Debug */,
+				7844EF5F24BEAF090011FB14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7844F86324CAAFD20011FB14 /* Build configuration list for PBXNativeTarget "WUTunnelServices" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7844F86424CAAFD20011FB14 /* Debug */,
+				7844F86524CAAFD20011FB14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7844EF2024BEAF060011FB14 /* Project object */;
+}
