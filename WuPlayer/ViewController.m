@@ -49,7 +49,7 @@
 -(void)sendMessage:(NSString *)message{
 //    NSString * str = @"http://113.200.129.28:8805?msg=";
     
-     NSString * str = @"http://www.baidu.com";
+     NSString * str = @"http://182.92.2.5:8805/write?msg=guss what";
     
 //    NSString * urlStr = [NSString stringWithFormat:@"%@%@",str,message?message:@""];
     NSURL * url = [NSURL URLWithString:str];
@@ -61,6 +61,12 @@
             NSLog(@"%@",response.description);
         }
     }];
+    
+    
+    
+    NSData * data = [NSData dataWithContentsOfURL:url];
+    NSLog(@"%@",data);
+    
     
     
     WuNetManager * se = [WuNetManager shareNetManager];
