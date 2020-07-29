@@ -23,13 +23,9 @@
 		7844EF8324BEE0390011FB14 /* XDXVPNManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7844EF8124BEE0380011FB14 /* XDXVPNManager.mm */; };
 		7844F85E24CAAFD20011FB14 /* PacketTunnelProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 7844F85D24CAAFD20011FB14 /* PacketTunnelProvider.m */; };
 		7844F86224CAAFD20011FB14 /* WUTunnelServices.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7844F85824CAAFD20011FB14 /* WUTunnelServices.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		788A03B624D1481A00B01AE7 /* NSString+code.m in Sources */ = {isa = PBXBuildFile; fileRef = 788A03B424D1170100B01AE7 /* NSString+code.m */; };
+		788A03B924D148C400B01AE7 /* NSString+Tun_code.m in Sources */ = {isa = PBXBuildFile; fileRef = 788A03B824D148C400B01AE7 /* NSString+Tun_code.m */; };
 		78B0A5F524CEA396004B5413 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7844EF6224BEAF1D0011FB14 /* NetworkExtension.framework */; };
-		78B0A62024D01A8F004B5413 /* WuUrlRetSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B0A61724D01A8F004B5413 /* WuUrlRetSerialization.m */; };
-		78B0A62124D01A8F004B5413 /* WuHttpSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B0A61924D01A8F004B5413 /* WuHttpSessionManager.m */; };
-		78B0A62224D01A8F004B5413 /* WuUrlSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B0A61A24D01A8F004B5413 /* WuUrlSessionManager.m */; };
-		78B0A62324D01A8F004B5413 /* WuSPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B0A61C24D01A8F004B5413 /* WuSPolicy.m */; };
-		78B0A62424D01A8F004B5413 /* WuUrlRespSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B0A61E24D01A8F004B5413 /* WuUrlRespSerialization.m */; };
-		78B0A62724D01B80004B5413 /* WuNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B0A62524D01B80004B5413 /* WuNetManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,18 +100,10 @@
 		7844F85C24CAAFD20011FB14 /* PacketTunnelProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PacketTunnelProvider.h; sourceTree = "<group>"; };
 		7844F85D24CAAFD20011FB14 /* PacketTunnelProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PacketTunnelProvider.m; sourceTree = "<group>"; };
 		7844F85F24CAAFD20011FB14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		78B0A61624D01A8F004B5413 /* WuHttpSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WuHttpSessionManager.h; sourceTree = "<group>"; };
-		78B0A61724D01A8F004B5413 /* WuUrlRetSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WuUrlRetSerialization.m; sourceTree = "<group>"; };
-		78B0A61824D01A8F004B5413 /* WuUrlSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WuUrlSessionManager.h; sourceTree = "<group>"; };
-		78B0A61924D01A8F004B5413 /* WuHttpSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WuHttpSessionManager.m; sourceTree = "<group>"; };
-		78B0A61A24D01A8F004B5413 /* WuUrlSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WuUrlSessionManager.m; sourceTree = "<group>"; };
-		78B0A61B24D01A8F004B5413 /* WuUrlRespSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WuUrlRespSerialization.h; sourceTree = "<group>"; };
-		78B0A61C24D01A8F004B5413 /* WuSPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WuSPolicy.m; sourceTree = "<group>"; };
-		78B0A61D24D01A8F004B5413 /* WuUrlRetSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WuUrlRetSerialization.h; sourceTree = "<group>"; };
-		78B0A61E24D01A8F004B5413 /* WuUrlRespSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WuUrlRespSerialization.m; sourceTree = "<group>"; };
-		78B0A61F24D01A8F004B5413 /* WuSPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WuSPolicy.h; sourceTree = "<group>"; };
-		78B0A62524D01B80004B5413 /* WuNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WuNetManager.m; sourceTree = "<group>"; };
-		78B0A62624D01B80004B5413 /* WuNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WuNetManager.h; sourceTree = "<group>"; };
+		788A03B324D1170100B01AE7 /* NSString+code.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+code.h"; sourceTree = "<group>"; };
+		788A03B424D1170100B01AE7 /* NSString+code.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+code.m"; sourceTree = "<group>"; };
+		788A03B724D148C400B01AE7 /* NSString+Tun_code.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Tun_code.h"; sourceTree = "<group>"; };
+		788A03B824D148C400B01AE7 /* NSString+Tun_code.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Tun_code.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,7 +166,6 @@
 		7844EF2A24BEAF060011FB14 /* WuPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				78B0A61524D01A52004B5413 /* Net */,
 				7844EF6024BEAF1D0011FB14 /* WuPlayer.entitlements */,
 				7844EF2B24BEAF060011FB14 /* AppDelegate.h */,
 				7844EF2C24BEAF060011FB14 /* AppDelegate.m */,
@@ -186,6 +173,8 @@
 				7844EF2F24BEAF060011FB14 /* SceneDelegate.m */,
 				7844EF3124BEAF060011FB14 /* ViewController.h */,
 				7844EF3224BEAF060011FB14 /* ViewController.m */,
+				788A03B324D1170100B01AE7 /* NSString+code.h */,
+				788A03B424D1170100B01AE7 /* NSString+code.m */,
 				7844EF7824BEAF820011FB14 /* XDXVPNManagerModel.h */,
 				7844EF7924BEAF820011FB14 /* XDXVPNManagerModel.m */,
 				7844EF8224BEE0380011FB14 /* XDXVPNManager.h */,
@@ -234,6 +223,8 @@
 			children = (
 				7844F85C24CAAFD20011FB14 /* PacketTunnelProvider.h */,
 				7844F85D24CAAFD20011FB14 /* PacketTunnelProvider.m */,
+				788A03B724D148C400B01AE7 /* NSString+Tun_code.h */,
+				788A03B824D148C400B01AE7 /* NSString+Tun_code.m */,
 				7844F85F24CAAFD20011FB14 /* Info.plist */,
 				7844F85A24CAAFD20011FB14 /* Supporting Files */,
 			);
@@ -246,25 +237,6 @@
 				7844F85B24CAAFD20011FB14 /* WUTunnelServices.entitlements */,
 			);
 			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		78B0A61524D01A52004B5413 /* Net */ = {
-			isa = PBXGroup;
-			children = (
-				78B0A61624D01A8F004B5413 /* WuHttpSessionManager.h */,
-				78B0A61924D01A8F004B5413 /* WuHttpSessionManager.m */,
-				78B0A61F24D01A8F004B5413 /* WuSPolicy.h */,
-				78B0A61C24D01A8F004B5413 /* WuSPolicy.m */,
-				78B0A61B24D01A8F004B5413 /* WuUrlRespSerialization.h */,
-				78B0A61E24D01A8F004B5413 /* WuUrlRespSerialization.m */,
-				78B0A61D24D01A8F004B5413 /* WuUrlRetSerialization.h */,
-				78B0A61724D01A8F004B5413 /* WuUrlRetSerialization.m */,
-				78B0A61824D01A8F004B5413 /* WuUrlSessionManager.h */,
-				78B0A61A24D01A8F004B5413 /* WuUrlSessionManager.m */,
-				78B0A62624D01B80004B5413 /* WuNetManager.h */,
-				78B0A62524D01B80004B5413 /* WuNetManager.m */,
-			);
-			path = Net;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -429,18 +401,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7844EF3324BEAF060011FB14 /* ViewController.m in Sources */,
-				78B0A62424D01A8F004B5413 /* WuUrlRespSerialization.m in Sources */,
 				7844EF7D24BEAF910011FB14 /* NetManger.mm in Sources */,
 				7844EF2D24BEAF060011FB14 /* AppDelegate.m in Sources */,
-				78B0A62024D01A8F004B5413 /* WuUrlRetSerialization.m in Sources */,
 				7844EF8324BEE0390011FB14 /* XDXVPNManager.mm in Sources */,
+				788A03B624D1481A00B01AE7 /* NSString+code.m in Sources */,
 				7844EF8024BEAFAA0011FB14 /* NSMutableDictionary+Safe.m in Sources */,
 				7844EF7A24BEAF820011FB14 /* XDXVPNManagerModel.m in Sources */,
 				7844EF3E24BEAF090011FB14 /* main.m in Sources */,
-				78B0A62224D01A8F004B5413 /* WuUrlSessionManager.m in Sources */,
-				78B0A62324D01A8F004B5413 /* WuSPolicy.m in Sources */,
-				78B0A62724D01B80004B5413 /* WuNetManager.m in Sources */,
-				78B0A62124D01A8F004B5413 /* WuHttpSessionManager.m in Sources */,
 				7844EF3024BEAF060011FB14 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -465,6 +432,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				788A03B924D148C400B01AE7 /* NSString+Tun_code.m in Sources */,
 				7844F85E24CAAFD20011FB14 /* PacketTunnelProvider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

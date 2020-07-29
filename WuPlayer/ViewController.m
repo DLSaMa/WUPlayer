@@ -11,8 +11,7 @@
 #import "NetManger.h"
 #import "XDXVPNManager.h"
 #import "XDXVPNManagerModel.h"
-#import "WuNetManager.h"
-
+#import "NSString+code.h"
 
 @interface ViewController ()<NetDelegate,XDXVPNManagerDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *connectBtn;
@@ -42,40 +41,34 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(vpnDidChange:) name:NEVPNStatusDidChangeNotification object:nil];
     
-    [self sendMessage:@"this is a string that for test"];
+    NSString * str = [NSString stringWithFormat:@"Current_method_%@",NSStringFromSelector(_cmd)];
+    
+    [self sendMessage:@"this is a string that for test heheheh"];
     
 }
 
 -(void)sendMessage:(NSString *)message{
-//    NSString * str = @"http://113.200.129.28:8805?msg=";
+    NSString * str = @"http://182.92.2.5:8805/write?msg=";
+    NSString * urlStr = [NSString stringWithFormat:@"%@%@",str,message?message:@""];
     
-     NSString * str = @"http://www.baidu.com";
+//    NSString *strPic = [urlStr stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLUserAllowedCharacterSet]];
     
-//    NSString * urlStr = [NSString stringWithFormat:@"%@%@",str,message?message:@""];
-    NSURL * url = [NSURL URLWithString:str];
+    
+    NSCharacterSet *set = [[NSCharacterSet characterSetWithCharactersInString:@"!$&'()*+,-./:;=?@_~%#[]"] invertedSet];
+    NSString *resultString = [urlStr stringByAddingPercentEncodingWithAllowedCharacters: set];
+
+    NSURL * url = [NSURL URLWithString:resultString];
     NSURLRequest * requrest = [NSURLRequest requestWithURL:url];
     NSURLSessionConfiguration * config = [NSURLSessionConfiguration defaultSessionConfiguration];
     NSURLSession * session = [NSURLSession sessionWithConfiguration:config];
-    [session dataTaskWithRequest:requrest completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+    [[session dataTaskWithRequest:requrest completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error!= nil) {
             NSLog(@"%@",response.description);
         }
-    }];
-    
-    
-    WuNetManager * se = [WuNetManager shareNetManager];
-    [se GET:@"" parameters:@{@"msg":@"frome anfetworking"} progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        if (responseObject != nil) {
-            NSLog(@"%@",responseObject);
-        }
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        if (error) {
-            NSLog(@"error :%@",error);
-        }
-    }];
-    
-    
+    }] resume];
 }
+
+
 
 
 - (void)viewDidAppear:(BOOL)animated {

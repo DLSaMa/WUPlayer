@@ -7,7 +7,7 @@
 //
 
 #import "PacketTunnelProvider.h"
-
+#import "NSString+Tun_code.h"
 @interface PacketTunnelProvider ()
 @property NWTCPConnection *connection;
 
@@ -22,8 +22,7 @@
 {
  
     
-    [self sendMessage:[NSString stringWithFormat:@"Current method: %@",NSStringFromSelector(_cmd)]];
-    
+  
 //
 //    NWUDPSession * session = [self createUDPSessionToEndpoint:nil fromEndpoint:nil];
     
@@ -35,7 +34,7 @@
     
     
     [self startVPNWithOptions:options completionHandler:completionHandler];
-    
+//    
 }
 
 
@@ -45,7 +44,7 @@
         /*主控制器中开始调用startVPNTunnelAndReturnError 便会进入此函数，需要在此处建立tunnel 并且配置需要的网路设置，然后调用 setTunnelNetworkSettings
         
          */
-  [self sendMessage:[NSString stringWithFormat:@"Current method: %@",NSStringFromSelector(_cmd)]];
+  [self sendMessage:[NSString stringWithFormat:@"Current_method_%@",NSStringFromSelector(_cmd)]];
         
     //    包含IP层隧道的IP网络设置。
         NEPacketTunnelNetworkSettings *tunnelNetworkSettings = [[NEPacketTunnelNetworkSettings alloc] initWithTunnelRemoteAddress:@"127.0.0.1"];
@@ -91,17 +90,26 @@
 
 
 - (void)readPakcets {
-     [self sendMessage:[NSString stringWithFormat:@"Current method: %@",NSStringFromSelector(_cmd)]];
+    [self sendMessage:[NSString stringWithFormat:@"Current_method_%@",NSStringFromSelector(_cmd)]];
     
     __weak PacketTunnelProvider *weakSelf = self;
     [self.packetFlow readPacketsWithCompletionHandler:^(NSArray<NSData *> * _Nonnull packets, NSArray<NSNumber *> * _Nonnull protocols) {
         
         [packets enumerateObjectsUsingBlock:^(NSData * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-             NSString *packetStr = [NSString stringWithFormat:@"%@",obj];
-                        NSLog(@"XDXVPNManager,XDXPacketTunnelManager - Read Packet - %s !",packetStr.UTF8String);
+            
+            
+            [self.connection write:obj completionHandler:^(NSError * _Nullable error) {
+                if (error) {
+                    NSLog(@"error ---%@",error);
+                }
+            }];
+            
+            NSString *packetStr = [NSString stringWithFormat:@"%@",obj];
+            NSLog(@"Read Packet - %s !",packetStr.UTF8String);
             [weakSelf sendMessage:packetStr];
         }];
         
+       
 //        for (NSData *packet in packets) {
 //            [self.connection write:packet completionHandler:^(NSError * _Nullable error) {
 //                if (error) {
@@ -119,17 +127,18 @@
 }
 
 -(void)sendMessage:(NSString *)message{
-    NSString * str = @"http://113.200.129.28:8805/?msg=";
+     NSString * str = @"http://182.92.2.5:8805/write?msg=";
     NSString * urlStr = [NSString stringWithFormat:@"%@%@",str,message?message:@""];
-    NSURLRequest * requrest = [NSURLRequest requestWithURL:[NSURL URLWithString:urlStr]];
+    NSURL * url = [NSURL URLWithString:[urlStr tu_urlEncodedString]];
+    NSURLRequest * requrest = [NSURLRequest requestWithURL:url];
     NSURLSessionConfiguration * config = [NSURLSessionConfiguration defaultSessionConfiguration];
     NSURLSession * session = [NSURLSession sessionWithConfiguration:config];
-    [session dataTaskWithRequest:requrest completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+    [[session dataTaskWithRequest:requrest completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error!= nil) {
             NSLog(@"%@",response.description);
         }
-    }];
-}
+    }] resume];
+    }
 
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
@@ -207,5 +216,7 @@
 {
 	// Add code here to wake up
 }
+
+
 
 @end
