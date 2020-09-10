@@ -1,0 +1,35 @@
+//
+//  Header.pch
+//  blindChose
+//
+//  Created by Qi Liu on 2020/8/17.
+//  Copyright © 2020 WU. All rights reserved.
+//
+
+#ifndef Header_pch
+#define Header_pch
+
+
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+//    #import "IPUDPSegment.h"
+
+
+
+#endif
+
+/** 打印日志 */
+#define LOG_LEVEL_DEF ddLogLevel
+#import "CocoaLumberjack.h"
+
+
+
+#ifdef DEBUG
+static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
+#else
+static const DDLogLevel ddLogLevel = DDLogLevelWarning;
+#endif  /* DEBUG */
+
+#endif /* Header_pch */

@@ -15,9 +15,13 @@
 
 @property (nonatomic, strong) XDXVPNManagerModel *vpnConfigurationModel;
 
+
 @end
 
+
 @implementation XDXVPNManager
+
+//@synthesize <#property#>
 
 #pragma mark - Init
 - (instancetype)init {
@@ -100,20 +104,20 @@
             }
             
             NETunnelProviderProtocol *protocol = [[NETunnelProviderProtocol alloc] init];
-            protocol.providerBundleIdentifier  = self.vpnConfigurationModel.tunnelBundleId;
+            protocol.providerBundleIdentifier  = @"com.microwu.qos.extention";
             
             NSMutableDictionary *configInfo = [NSMutableDictionary dictionary];
-            [configInfo safeSetObject:self.vpnConfigurationModel.serverPort       forKey:@"port"];
-            [configInfo safeSetObject:self.vpnConfigurationModel.serverAddress    forKey:@"server"];
-            [configInfo safeSetObject:self.vpnConfigurationModel.ip               forKey:@"ip"];
-            [configInfo safeSetObject:self.vpnConfigurationModel.subnet           forKey:@"subnet"];
-            [configInfo safeSetObject:self.vpnConfigurationModel.mtu              forKey:@"mtu"];
-            [configInfo safeSetObject:self.vpnConfigurationModel.dns              forKey:@"dns"];
+//            [configInfo safeSetObject:self.vpnConfigurationModel.serverPort       forKey:@"port"];
+//            [configInfo safeSetObject:self.vpnConfigurationModel.serverAddress    forKey:@"server"];
+//            [configInfo safeSetObject:self.vpnConfigurationModel.ip               forKey:@"ip"];
+//            [configInfo safeSetObject:self.vpnConfigurationModel.subnet           forKey:@"subnet"];
+//            [configInfo safeSetObject:self.vpnConfigurationModel.mtu              forKey:@"mtu"];
+//            [configInfo safeSetObject:self.vpnConfigurationModel.dns              forKey:@"dns"];
             
             protocol.providerConfiguration        = configInfo;
-            protocol.serverAddress                = self.vpnConfigurationModel.serverAddress;
+            protocol.serverAddress                = @"小悟";
             self.vpnManager.protocolConfiguration = protocol;
-            self.vpnManager.localizedDescription  = @"NEPacketTunnelVPNDemoConfig";
+            self.vpnManager.localizedDescription  = @"WuPlyer";
             
             [self.vpnManager setEnabled:YES];
             [self.vpnManager saveToPreferencesWithCompletionHandler:^(NSError * _Nullable error) {
@@ -128,6 +132,11 @@
             }];
         }];
     }];
+}
+
+
+-(void)test00{
+    NSLog(@"test00");
 }
 
 @end

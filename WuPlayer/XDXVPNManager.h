@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TestProtocol.h"
 
 @class XDXVPNManagerModel,NETunnelProviderManager;
 
@@ -16,11 +17,15 @@
 
 @end
 
-@interface XDXVPNManager : NSObject
+@interface XDXVPNManager : NSObject<TestProtocol>
 
 @property (nonatomic, strong) NETunnelProviderManager *vpnManager;
 
 @property (nonatomic, weak) id<XDXVPNManagerDelegate> delegate;
+
+//@property (nonatomic, weak) id<XDXVPNManagerDelegate> pro;
+
+
 
 /**
  *  Configure the base information of vpn.
@@ -38,6 +43,7 @@
  *  If success return YES, otherwise return NO.
  */
 - (BOOL)stopVPN;
+
 
 
 @end

@@ -3,12 +3,168 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10EB7999F7B5311AAEC21BA1 /* Pods_WuPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 246F4208A03F92EF5D43D4C6 /* Pods_WuPlayer.framework */; };
+		783CE5A524FCF12100D0D270 /* IPStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE5A324FCF12100D0D270 /* IPStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		783CE5A824FCF12100D0D270 /* IPStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 783CE5A124FCF12000D0D270 /* IPStack.framework */; };
+		783CE5A924FCF12100D0D270 /* IPStack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 783CE5A124FCF12000D0D270 /* IPStack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		783CE62C24FCF15C00D0D270 /* memp.c in Sources */ = {isa = PBXBuildFile; fileRef = 783CE5AF24FCF15B00D0D270 /* memp.c */; };
+		783CE62D24FCF15C00D0D270 /* sys.c in Sources */ = {isa = PBXBuildFile; fileRef = 783CE5B024FCF15B00D0D270 /* sys.c */; };
+		783CE62E24FCF15C00D0D270 /* inet_chksum.c in Sources */ = {isa = PBXBuildFile; fileRef = 783CE5B124FCF15B00D0D270 /* inet_chksum.c */; };
+		783CE62F24FCF15C00D0D270 /* tcp_out.c in Sources */ = {isa = PBXBuildFile; fileRef = 783CE5B224FCF15B00D0D270 /* tcp_out.c */; };
+		783CE63024FCF15C00D0D270 /* ip.c in Sources */ = {isa = PBXBuildFile; fileRef = 783CE5B324FCF15B00D0D270 /* ip.c */; };
+		783CE63124FCF15C00D0D270 /* init.c in Sources */ = {isa = PBXBuildFile; fileRef = 783CE5B424FCF15B00D0D270 /* init.c */; };
+		783CE63224FCF15C00D0D270 /* mem.c in Sources */ = {isa = PBXBuildFile; fileRef = 783CE5B524FCF15B00D0D270 /* mem.c */; };
+		783CE63324FCF15C00D0D270 /* def.c in Sources */ = {isa = PBXBuildFile; fileRef = 783CE5B624FCF15B00D0D270 /* def.c */; };
+		783CE63424FCF15C00D0D270 /* udp.c in Sources */ = {isa = PBXBuildFile; fileRef = 783CE5B724FCF15B00D0D270 /* udp.c */; };
+		783CE63524FCF15C00D0D270 /* stats.c in Sources */ = {isa = PBXBuildFile; fileRef = 783CE5B824FCF15B00D0D270 /* stats.c */; };
+		783CE63624FCF15C00D0D270 /* tcp_in.c in Sources */ = {isa = PBXBuildFile; fileRef = 783CE5B924FCF15B00D0D270 /* tcp_in.c */; };
+		783CE63724FCF15C00D0D270 /* autoip.c in Sources */ = {isa = PBXBuildFile; fileRef = 783CE5BB24FCF15B00D0D270 /* autoip.c */; };
+		783CE63824FCF15C00D0D270 /* dhcp.c in Sources */ = {isa = PBXBuildFile; fileRef = 783CE5BC24FCF15B00D0D270 /* dhcp.c */; };
+		783CE63924FCF15C00D0D270 /* igmp.c in Sources */ = {isa = PBXBuildFile; fileRef = 783CE5BD24FCF15B00D0D270 /* igmp.c */; };
+		783CE63A24FCF15C00D0D270 /* etharp.c in Sources */ = {isa = PBXBuildFile; fileRef = 783CE5BE24FCF15B00D0D270 /* etharp.c */; };
+		783CE63B24FCF15C00D0D270 /* icmp.c in Sources */ = {isa = PBXBuildFile; fileRef = 783CE5BF24FCF15B00D0D270 /* icmp.c */; };
+		783CE63C24FCF15C00D0D270 /* ip4.c in Sources */ = {isa = PBXBuildFile; fileRef = 783CE5C024FCF15B00D0D270 /* ip4.c */; };
+		783CE63D24FCF15C00D0D270 /* ip4_frag.c in Sources */ = {isa = PBXBuildFile; fileRef = 783CE5C124FCF15B00D0D270 /* ip4_frag.c */; };
+		783CE63E24FCF15C00D0D270 /* ip4_addr.c in Sources */ = {isa = PBXBuildFile; fileRef = 783CE5C224FCF15B00D0D270 /* ip4_addr.c */; };
+		783CE63F24FCF15C00D0D270 /* netif.c in Sources */ = {isa = PBXBuildFile; fileRef = 783CE5C324FCF15B00D0D270 /* netif.c */; };
+		783CE64024FCF15C00D0D270 /* tcp.c in Sources */ = {isa = PBXBuildFile; fileRef = 783CE5C424FCF15B00D0D270 /* tcp.c */; };
+		783CE64124FCF15C00D0D270 /* pbuf.c in Sources */ = {isa = PBXBuildFile; fileRef = 783CE5C524FCF15B00D0D270 /* pbuf.c */; };
+		783CE64224FCF15C00D0D270 /* timeouts.c in Sources */ = {isa = PBXBuildFile; fileRef = 783CE5C624FCF15B00D0D270 /* timeouts.c */; };
+		783CE64324FCF15C00D0D270 /* ip6.c in Sources */ = {isa = PBXBuildFile; fileRef = 783CE5C824FCF15B00D0D270 /* ip6.c */; };
+		783CE64424FCF15C00D0D270 /* icmp6.c in Sources */ = {isa = PBXBuildFile; fileRef = 783CE5C924FCF15B00D0D270 /* icmp6.c */; };
+		783CE64524FCF15C00D0D270 /* mld6.c in Sources */ = {isa = PBXBuildFile; fileRef = 783CE5CA24FCF15B00D0D270 /* mld6.c */; };
+		783CE64624FCF15C00D0D270 /* dhcp6.c in Sources */ = {isa = PBXBuildFile; fileRef = 783CE5CB24FCF15B00D0D270 /* dhcp6.c */; };
+		783CE64724FCF15C00D0D270 /* ethip6.c in Sources */ = {isa = PBXBuildFile; fileRef = 783CE5CC24FCF15B00D0D270 /* ethip6.c */; };
+		783CE64824FCF15C00D0D270 /* nd6.c in Sources */ = {isa = PBXBuildFile; fileRef = 783CE5CD24FCF15B00D0D270 /* nd6.c */; };
+		783CE64924FCF15C00D0D270 /* inet6.c in Sources */ = {isa = PBXBuildFile; fileRef = 783CE5CE24FCF15B00D0D270 /* inet6.c */; };
+		783CE64A24FCF15C00D0D270 /* ip6_addr.c in Sources */ = {isa = PBXBuildFile; fileRef = 783CE5CF24FCF15B00D0D270 /* ip6_addr.c */; };
+		783CE64B24FCF15C00D0D270 /* ip6_frag.c in Sources */ = {isa = PBXBuildFile; fileRef = 783CE5D024FCF15B00D0D270 /* ip6_frag.c */; };
+		783CE64C24FCF15C00D0D270 /* pbuf.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE5D324FCF15B00D0D270 /* pbuf.h */; };
+		783CE64D24FCF15C00D0D270 /* tcp.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE5D424FCF15B00D0D270 /* tcp.h */; };
+		783CE64E24FCF15C00D0D270 /* nd6.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE5D524FCF15B00D0D270 /* nd6.h */; };
+		783CE64F24FCF15C00D0D270 /* err.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE5D624FCF15B00D0D270 /* err.h */; };
+		783CE65024FCF15C00D0D270 /* etharp.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE5D724FCF15B00D0D270 /* etharp.h */; };
+		783CE65124FCF15C00D0D270 /* igmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE5D824FCF15B00D0D270 /* igmp.h */; };
+		783CE65224FCF15C00D0D270 /* netif.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE5D924FCF15B00D0D270 /* netif.h */; };
+		783CE65324FCF15C00D0D270 /* debug.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE5DA24FCF15B00D0D270 /* debug.h */; };
+		783CE65424FCF15C00D0D270 /* ethip6.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE5DB24FCF15B00D0D270 /* ethip6.h */; };
+		783CE65524FCF15C00D0D270 /* ip4.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE5DC24FCF15B00D0D270 /* ip4.h */; };
+		783CE65624FCF15C00D0D270 /* icmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE5DD24FCF15B00D0D270 /* icmp.h */; };
+		783CE65724FCF15C00D0D270 /* timeouts.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE5DE24FCF15B00D0D270 /* timeouts.h */; };
+		783CE65824FCF15C00D0D270 /* snmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE5DF24FCF15B00D0D270 /* snmp.h */; };
+		783CE65924FCF15C00D0D270 /* ip4_frag.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE5E024FCF15B00D0D270 /* ip4_frag.h */; };
+		783CE65A24FCF15C00D0D270 /* ip6_addr.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE5E124FCF15B00D0D270 /* ip6_addr.h */; };
+		783CE65B24FCF15C00D0D270 /* inet.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE5E224FCF15B00D0D270 /* inet.h */; };
+		783CE65C24FCF15C00D0D270 /* ip6_frag.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE5E324FCF15B00D0D270 /* ip6_frag.h */; };
+		783CE65D24FCF15C00D0D270 /* ip4_addr.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE5E424FCF15B00D0D270 /* ip4_addr.h */; };
+		783CE65E24FCF15C00D0D270 /* dhcp.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE5E524FCF15B00D0D270 /* dhcp.h */; };
+		783CE65F24FCF15C00D0D270 /* autoip.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE5E624FCF15B00D0D270 /* autoip.h */; };
+		783CE66024FCF15C00D0D270 /* memp.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE5E724FCF15B00D0D270 /* memp.h */; };
+		783CE66124FCF15C00D0D270 /* tcp.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE5E924FCF15B00D0D270 /* tcp.h */; };
+		783CE66224FCF15C00D0D270 /* nd6.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE5EA24FCF15B00D0D270 /* nd6.h */; };
+		783CE66324FCF15C00D0D270 /* etharp.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE5EB24FCF15B00D0D270 /* etharp.h */; };
+		783CE66424FCF15C00D0D270 /* igmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE5EC24FCF15B00D0D270 /* igmp.h */; };
+		783CE66524FCF15C00D0D270 /* ip4.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE5ED24FCF15B00D0D270 /* ip4.h */; };
+		783CE66624FCF15C00D0D270 /* icmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE5EE24FCF15B00D0D270 /* icmp.h */; };
+		783CE66724FCF15C00D0D270 /* ethernet.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE5EF24FCF15B00D0D270 /* ethernet.h */; };
+		783CE66824FCF15C00D0D270 /* dhcp.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE5F024FCF15B00D0D270 /* dhcp.h */; };
+		783CE66924FCF15C00D0D270 /* autoip.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE5F124FCF15B00D0D270 /* autoip.h */; };
+		783CE66A24FCF15C00D0D270 /* ip6.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE5F224FCF15B00D0D270 /* ip6.h */; };
+		783CE66B24FCF15C00D0D270 /* icmp6.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE5F324FCF15B00D0D270 /* icmp6.h */; };
+		783CE66C24FCF15C00D0D270 /* ip.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE5F424FCF15B00D0D270 /* ip.h */; };
+		783CE66D24FCF15C00D0D270 /* udp.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE5F524FCF15B00D0D270 /* udp.h */; };
+		783CE66E24FCF15C00D0D270 /* mld6.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE5F624FCF15B00D0D270 /* mld6.h */; };
+		783CE66F24FCF15C00D0D270 /* nd6_priv.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE5F824FCF15B00D0D270 /* nd6_priv.h */; };
+		783CE67024FCF15C00D0D270 /* tcp_priv.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE5F924FCF15B00D0D270 /* tcp_priv.h */; };
+		783CE67124FCF15C00D0D270 /* memp_priv.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE5FA24FCF15B00D0D270 /* memp_priv.h */; };
+		783CE67224FCF15C00D0D270 /* memp_std.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE5FB24FCF15B00D0D270 /* memp_std.h */; };
+		783CE67324FCF15C00D0D270 /* ip_addr.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE5FC24FCF15B00D0D270 /* ip_addr.h */; };
+		783CE67424FCF15C00D0D270 /* opt.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE5FD24FCF15B00D0D270 /* opt.h */; };
+		783CE67524FCF15C00D0D270 /* inet_chksum.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE5FE24FCF15B00D0D270 /* inet_chksum.h */; };
+		783CE67624FCF15C00D0D270 /* ip6.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE5FF24FCF15B00D0D270 /* ip6.h */; };
+		783CE67724FCF15C00D0D270 /* sys.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE60024FCF15B00D0D270 /* sys.h */; };
+		783CE67824FCF15C00D0D270 /* errno.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE60124FCF15B00D0D270 /* errno.h */; };
+		783CE67924FCF15C00D0D270 /* def.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE60224FCF15B00D0D270 /* def.h */; };
+		783CE67A24FCF15C00D0D270 /* mem.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE60324FCF15B00D0D270 /* mem.h */; };
+		783CE67B24FCF15C00D0D270 /* icmp6.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE60424FCF15B00D0D270 /* icmp6.h */; };
+		783CE67C24FCF15C00D0D270 /* ip.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE60524FCF15B00D0D270 /* ip.h */; };
+		783CE67D24FCF15C00D0D270 /* init.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE60624FCF15B00D0D270 /* init.h */; };
+		783CE67E24FCF15C00D0D270 /* dhcp6.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE60724FCF15B00D0D270 /* dhcp6.h */; };
+		783CE67F24FCF15C00D0D270 /* sntp.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE60924FCF15B00D0D270 /* sntp.h */; };
+		783CE68024FCF15C00D0D270 /* snmp_opts.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE60A24FCF15B00D0D270 /* snmp_opts.h */; };
+		783CE68124FCF15C00D0D270 /* httpd.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE60B24FCF15B00D0D270 /* httpd.h */; };
+		783CE68224FCF15C00D0D270 /* snmp_scalar.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE60C24FCF15B00D0D270 /* snmp_scalar.h */; };
+		783CE68324FCF15C00D0D270 /* snmpv3.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE60D24FCF15B00D0D270 /* snmpv3.h */; };
+		783CE68424FCF15C00D0D270 /* netbiosns_opts.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE60E24FCF15B00D0D270 /* netbiosns_opts.h */; };
+		783CE68524FCF15C00D0D270 /* tftp_opts.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE60F24FCF15B00D0D270 /* tftp_opts.h */; };
+		783CE68624FCF15C00D0D270 /* snmp_mib2.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE61024FCF15B00D0D270 /* snmp_mib2.h */; };
+		783CE68724FCF15C00D0D270 /* mdns.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE61124FCF15B00D0D270 /* mdns.h */; };
+		783CE68824FCF15C00D0D270 /* netbiosns.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE61224FCF15B00D0D270 /* netbiosns.h */; };
+		783CE68924FCF15C00D0D270 /* snmp_core.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE61324FCF15B00D0D270 /* snmp_core.h */; };
+		783CE68A24FCF15C00D0D270 /* tftp_server.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE61424FCF15B00D0D270 /* tftp_server.h */; };
+		783CE68B24FCF15C00D0D270 /* snmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE61524FCF15B00D0D270 /* snmp.h */; };
+		783CE68C24FCF15C00D0D270 /* snmp_table.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE61624FCF15B00D0D270 /* snmp_table.h */; };
+		783CE68D24FCF15C00D0D270 /* httpd_opts.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE61724FCF15B00D0D270 /* httpd_opts.h */; };
+		783CE68E24FCF15C00D0D270 /* lwiperf.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE61824FCF15B00D0D270 /* lwiperf.h */; };
+		783CE68F24FCF15C00D0D270 /* mdns_priv.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE61924FCF15B00D0D270 /* mdns_priv.h */; };
+		783CE69024FCF15C00D0D270 /* mqtt_opts.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE61A24FCF15B00D0D270 /* mqtt_opts.h */; };
+		783CE69124FCF15C00D0D270 /* mqtt.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE61B24FCF15B00D0D270 /* mqtt.h */; };
+		783CE69224FCF15C00D0D270 /* snmp_threadsync.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE61C24FCF15B00D0D270 /* snmp_threadsync.h */; };
+		783CE69324FCF15C00D0D270 /* mdns_opts.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE61D24FCF15B00D0D270 /* mdns_opts.h */; };
+		783CE69424FCF15C00D0D270 /* fs.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE61E24FCF15C00D0D270 /* fs.h */; };
+		783CE69524FCF15C00D0D270 /* sntp_opts.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE61F24FCF15C00D0D270 /* sntp_opts.h */; };
+		783CE69624FCF15C00D0D270 /* stats.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE62024FCF15C00D0D270 /* stats.h */; };
+		783CE69724FCF15C00D0D270 /* udp.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE62124FCF15C00D0D270 /* udp.h */; };
+		783CE69824FCF15C00D0D270 /* arch.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE62224FCF15C00D0D270 /* arch.h */; };
+		783CE69924FCF15C00D0D270 /* mld6.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE62324FCF15C00D0D270 /* mld6.h */; };
+		783CE69A24FCF15C00D0D270 /* etharp.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE62524FCF15C00D0D270 /* etharp.h */; };
+		783CE69B24FCF15C00D0D270 /* lowpan6.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE62624FCF15C00D0D270 /* lowpan6.h */; };
+		783CE69C24FCF15C00D0D270 /* lowpan6_opts.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE62724FCF15C00D0D270 /* lowpan6_opts.h */; };
+		783CE69D24FCF15C00D0D270 /* ethernet.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE62824FCF15C00D0D270 /* ethernet.h */; };
+		783CE69E24FCF15C00D0D270 /* cc.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE62A24FCF15C00D0D270 /* cc.h */; };
+		783CE69F24FCF15C00D0D270 /* lwipopts.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE62B24FCF15C00D0D270 /* lwipopts.h */; };
+		783CE6CE24FCFECD00D0D270 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 783CE6CD24FCFEC400D0D270 /* libresolv.tbd */; };
+		783CE6D024FCFEE700D0D270 /* libresolv.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 783CE6CF24FCFEDF00D0D270 /* libresolv.9.tbd */; };
+		783CE6D224FD03AC00D0D270 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 783CE6D124FD03A400D0D270 /* libresolv.tbd */; };
+		783CE6DA24FDE93700D0D270 /* AnClasss.m in Sources */ = {isa = PBXBuildFile; fileRef = 783CE6D924FDE93700D0D270 /* AnClasss.m */; };
+		783CE6ED24FF4D6700D0D270 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783CE6E824FF4D6600D0D270 /* SessionManager.swift */; };
+		783CE6EE24FF4D6700D0D270 /* HTTPConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783CE6E924FF4D6600D0D270 /* HTTPConnection.swift */; };
+		783CE6EF24FF4D6700D0D270 /* TCPProxyServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783CE6EA24FF4D6700D0D270 /* TCPProxyServer.swift */; };
+		783CE6F024FF4D6700D0D270 /* TCPConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783CE6EB24FF4D6700D0D270 /* TCPConnection.swift */; };
+		783CE6F124FF4D6700D0D270 /* HTTPProxyServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783CE6EC24FF4D6700D0D270 /* HTTPProxyServer.swift */; };
+		783CE6FA24FF6E0E00D0D270 /* IPStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 783CE5A124FCF12000D0D270 /* IPStack.framework */; };
+		783CE6FB24FF6E0E00D0D270 /* IPStack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 783CE5A124FCF12000D0D270 /* IPStack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		783CE70B250084CB00D0D270 /* lwIP.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE6FF250084CA00D0D270 /* lwIP.h */; };
+		783CE70C250084CB00D0D270 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 783CE700250084CB00D0D270 /* GCDAsyncSocket.m */; };
+		783CE70E250084CB00D0D270 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 783CE702250084CB00D0D270 /* GCDAsyncUdpSocket.m */; };
+		783CE70F250084CC00D0D270 /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE703250084CB00D0D270 /* GCDAsyncSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		783CE710250084CC00D0D270 /* GCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE704250084CB00D0D270 /* GCDAsyncUdpSocket.h */; };
+		783CE711250084CC00D0D270 /* ZPPacketTunnel.m in Sources */ = {isa = PBXBuildFile; fileRef = 783CE705250084CB00D0D270 /* ZPPacketTunnel.m */; };
+		783CE712250084CC00D0D270 /* ZPTCPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 783CE706250084CB00D0D270 /* ZPTCPConnection.m */; };
+		783CE713250084CC00D0D270 /* ZPTCPConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE707250084CB00D0D270 /* ZPTCPConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		783CE715250084CC00D0D270 /* ZPPacketTunnelEx.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE709250084CB00D0D270 /* ZPPacketTunnelEx.h */; };
+		783CE716250084CC00D0D270 /* ZPTCPConnectionEx.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE70A250084CB00D0D270 /* ZPTCPConnectionEx.h */; };
+		783CE7172500857D00D0D270 /* ZPPacketTunnel.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE701250084CB00D0D270 /* ZPPacketTunnel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		783CE72525009A7C00D0D270 /* SessionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783CE72425009A7C00D0D270 /* SessionModel.swift */; };
+		783CE73525009AD400D0D270 /* IPDNSUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = 783CE72725009AD400D0D270 /* IPDNSUtil.c */; };
+		783CE73625009AD400D0D270 /* IPUDPSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 783CE72825009AD400D0D270 /* IPUDPSegment.m */; };
+		783CE73725009AD400D0D270 /* IPPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 783CE72925009AD400D0D270 /* IPPacket.m */; };
+		783CE73825009AD400D0D270 /* IPDNSProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE72A25009AD400D0D270 /* IPDNSProtocol.h */; };
+		783CE73925009AD400D0D270 /* IPTCPSegment.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE72B25009AD400D0D270 /* IPTCPSegment.h */; };
+		783CE73A25009AD400D0D270 /* IPConstant.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE72C25009AD400D0D270 /* IPConstant.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		783CE73B25009AD400D0D270 /* IPDNSMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE72D25009AD400D0D270 /* IPDNSMessage.h */; };
+		783CE73C25009AD400D0D270 /* IPUDPSegment.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE72E25009AD400D0D270 /* IPUDPSegment.h */; };
+		783CE73D25009AD400D0D270 /* IPDNSUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE72F25009AD400D0D270 /* IPDNSUtil.h */; };
+		783CE73E25009AD400D0D270 /* IPPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 783CE73025009AD400D0D270 /* IPPacket.h */; };
+		783CE73F25009AD400D0D270 /* IPDNSMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 783CE73125009AD400D0D270 /* IPDNSMessage.m */; };
+		783CE74025009AD400D0D270 /* IPConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 783CE73225009AD400D0D270 /* IPConstant.m */; };
+		783CE74125009AD400D0D270 /* IPTCPSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 783CE73325009AD400D0D270 /* IPTCPSegment.m */; };
+		783CE74225009AD400D0D270 /* IPDNSProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 783CE73425009AD400D0D270 /* IPDNSProtocol.m */; };
 		7844EF2D24BEAF060011FB14 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7844EF2C24BEAF060011FB14 /* AppDelegate.m */; };
-		7844EF3024BEAF060011FB14 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7844EF2F24BEAF060011FB14 /* SceneDelegate.m */; };
 		7844EF3324BEAF060011FB14 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7844EF3224BEAF060011FB14 /* ViewController.m */; };
 		7844EF3624BEAF060011FB14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7844EF3424BEAF060011FB14 /* Main.storyboard */; };
 		7844EF3824BEAF090011FB14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7844EF3724BEAF090011FB14 /* Assets.xcassets */; };
@@ -26,9 +182,40 @@
 		788A03B624D1481A00B01AE7 /* NSString+code.m in Sources */ = {isa = PBXBuildFile; fileRef = 788A03B424D1170100B01AE7 /* NSString+code.m */; };
 		788A03B924D148C400B01AE7 /* NSString+Tun_code.m in Sources */ = {isa = PBXBuildFile; fileRef = 788A03B824D148C400B01AE7 /* NSString+Tun_code.m */; };
 		78B0A5F524CEA396004B5413 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7844EF6224BEAF1D0011FB14 /* NetworkExtension.framework */; };
+		78C3BD0324EA700D0089F23C /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C3BCE024EA700D0089F23C /* DDTTYLogger.m */; };
+		78C3BD0424EA700D0089F23C /* DDOSLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C3BCE124EA700D0089F23C /* DDOSLogger.m */; };
+		78C3BD0524EA700D0089F23C /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C3BCF324EA700D0089F23C /* DDASLLogger.m */; };
+		78C3BD0624EA700D0089F23C /* CLIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C3BCF524EA700D0089F23C /* CLIColor.m */; };
+		78C3BD0724EA700D0089F23C /* DDContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C3BCF724EA700D0089F23C /* DDContextFilterLogFormatter.m */; };
+		78C3BD0824EA700D0089F23C /* DDDispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C3BCF824EA700D0089F23C /* DDDispatchQueueLogFormatter.m */; };
+		78C3BD0924EA700D0089F23C /* DDFileLogger+Buffering.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C3BCF924EA700D0089F23C /* DDFileLogger+Buffering.m */; };
+		78C3BD0A24EA700D0089F23C /* DDMultiFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C3BCFA24EA700D0089F23C /* DDMultiFormatter.m */; };
+		78C3BD0B24EA700D0089F23C /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C3BCFB24EA700D0089F23C /* DDLog.m */; };
+		78C3BD0C24EA700D0089F23C /* DDLoggerNames.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C3BCFF24EA700D0089F23C /* DDLoggerNames.m */; };
+		78C3BD0D24EA700D0089F23C /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C3BD0024EA700D0089F23C /* DDAbstractDatabaseLogger.m */; };
+		78C3BD0E24EA700D0089F23C /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C3BD0124EA700D0089F23C /* DDFileLogger.m */; };
+		78C3BD0F24EA700D0089F23C /* DDASLLogCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C3BD0224EA700D0089F23C /* DDASLLogCapture.m */; };
+		78C3BD4624EA82790089F23C /* UIForLumberjack.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C3BD4424EA82790089F23C /* UIForLumberjack.m */; };
+		985A002D6D7CB1653713F292 /* Pods_WuPlayer_WuPlayerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3DD8FA47DF634EDCFA7E885 /* Pods_WuPlayer_WuPlayerUITests.framework */; };
+		AFD07EEBC63FCD903329E969 /* Pods_WUTunnelServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67AE7F0A6817B4A911A4965F /* Pods_WUTunnelServices.framework */; };
+		E7D9DF32977F20602D9A1189 /* Pods_WuPlayerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC1D2354FD16C34114CF9206 /* Pods_WuPlayerTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		783CE5A624FCF12100D0D270 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7844EF2024BEAF060011FB14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 783CE5A024FCF12000D0D270;
+			remoteInfo = IPStack;
+		};
+		783CE6FC24FF6E0E00D0D270 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7844EF2024BEAF060011FB14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 783CE5A024FCF12000D0D270;
+			remoteInfo = IPStack;
+		};
 		7844EF4424BEAF090011FB14 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7844EF2024BEAF060011FB14 /* Project object */;
@@ -53,6 +240,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		783CE58A24FCEEF800D0D270 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				783CE5A924FCF12100D0D270 /* IPStack.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		783CE6FE24FF6E0E00D0D270 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				783CE6FB24FF6E0E00D0D270 /* IPStack.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7844EF7624BEAF5E0011FB14 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -67,11 +276,172 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		23F703E0E04ACB41F17AFA63 /* Pods-WuPlayer-WuPlayerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WuPlayer-WuPlayerUITests.release.xcconfig"; path = "Target Support Files/Pods-WuPlayer-WuPlayerUITests/Pods-WuPlayer-WuPlayerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		246F4208A03F92EF5D43D4C6 /* Pods_WuPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WuPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C958A8769E4C2CE20993D83 /* Pods-WuPlayer-WuPlayerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WuPlayer-WuPlayerUITests.debug.xcconfig"; path = "Target Support Files/Pods-WuPlayer-WuPlayerUITests/Pods-WuPlayer-WuPlayerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		668446B53B06AF93DA882252 /* Pods-WUTunnelServices.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WUTunnelServices.debug.xcconfig"; path = "Target Support Files/Pods-WUTunnelServices/Pods-WUTunnelServices.debug.xcconfig"; sourceTree = "<group>"; };
+		67AE7F0A6817B4A911A4965F /* Pods_WUTunnelServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WUTunnelServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		685D9D6CFD0DB690E88CE4A1 /* Pods-WUTunnelServices.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WUTunnelServices.release.xcconfig"; path = "Target Support Files/Pods-WUTunnelServices/Pods-WUTunnelServices.release.xcconfig"; sourceTree = "<group>"; };
+		782E019A24EF7A99004AE421 /* TestProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestProtocol.h; sourceTree = "<group>"; };
+		783CE5A124FCF12000D0D270 /* IPStack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IPStack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		783CE5A324FCF12100D0D270 /* IPStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IPStack.h; sourceTree = "<group>"; };
+		783CE5A424FCF12100D0D270 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		783CE5AF24FCF15B00D0D270 /* memp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = memp.c; sourceTree = "<group>"; };
+		783CE5B024FCF15B00D0D270 /* sys.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sys.c; sourceTree = "<group>"; };
+		783CE5B124FCF15B00D0D270 /* inet_chksum.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = inet_chksum.c; sourceTree = "<group>"; };
+		783CE5B224FCF15B00D0D270 /* tcp_out.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tcp_out.c; sourceTree = "<group>"; };
+		783CE5B324FCF15B00D0D270 /* ip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ip.c; sourceTree = "<group>"; };
+		783CE5B424FCF15B00D0D270 /* init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = init.c; sourceTree = "<group>"; };
+		783CE5B524FCF15B00D0D270 /* mem.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mem.c; sourceTree = "<group>"; };
+		783CE5B624FCF15B00D0D270 /* def.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = def.c; sourceTree = "<group>"; };
+		783CE5B724FCF15B00D0D270 /* udp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = udp.c; sourceTree = "<group>"; };
+		783CE5B824FCF15B00D0D270 /* stats.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stats.c; sourceTree = "<group>"; };
+		783CE5B924FCF15B00D0D270 /* tcp_in.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tcp_in.c; sourceTree = "<group>"; };
+		783CE5BB24FCF15B00D0D270 /* autoip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = autoip.c; sourceTree = "<group>"; };
+		783CE5BC24FCF15B00D0D270 /* dhcp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dhcp.c; sourceTree = "<group>"; };
+		783CE5BD24FCF15B00D0D270 /* igmp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = igmp.c; sourceTree = "<group>"; };
+		783CE5BE24FCF15B00D0D270 /* etharp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = etharp.c; sourceTree = "<group>"; };
+		783CE5BF24FCF15B00D0D270 /* icmp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = icmp.c; sourceTree = "<group>"; };
+		783CE5C024FCF15B00D0D270 /* ip4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ip4.c; sourceTree = "<group>"; };
+		783CE5C124FCF15B00D0D270 /* ip4_frag.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ip4_frag.c; sourceTree = "<group>"; };
+		783CE5C224FCF15B00D0D270 /* ip4_addr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ip4_addr.c; sourceTree = "<group>"; };
+		783CE5C324FCF15B00D0D270 /* netif.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = netif.c; sourceTree = "<group>"; };
+		783CE5C424FCF15B00D0D270 /* tcp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tcp.c; sourceTree = "<group>"; };
+		783CE5C524FCF15B00D0D270 /* pbuf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pbuf.c; sourceTree = "<group>"; };
+		783CE5C624FCF15B00D0D270 /* timeouts.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = timeouts.c; sourceTree = "<group>"; };
+		783CE5C824FCF15B00D0D270 /* ip6.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ip6.c; sourceTree = "<group>"; };
+		783CE5C924FCF15B00D0D270 /* icmp6.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = icmp6.c; sourceTree = "<group>"; };
+		783CE5CA24FCF15B00D0D270 /* mld6.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mld6.c; sourceTree = "<group>"; };
+		783CE5CB24FCF15B00D0D270 /* dhcp6.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dhcp6.c; sourceTree = "<group>"; };
+		783CE5CC24FCF15B00D0D270 /* ethip6.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ethip6.c; sourceTree = "<group>"; };
+		783CE5CD24FCF15B00D0D270 /* nd6.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = nd6.c; sourceTree = "<group>"; };
+		783CE5CE24FCF15B00D0D270 /* inet6.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = inet6.c; sourceTree = "<group>"; };
+		783CE5CF24FCF15B00D0D270 /* ip6_addr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ip6_addr.c; sourceTree = "<group>"; };
+		783CE5D024FCF15B00D0D270 /* ip6_frag.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ip6_frag.c; sourceTree = "<group>"; };
+		783CE5D324FCF15B00D0D270 /* pbuf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pbuf.h; sourceTree = "<group>"; };
+		783CE5D424FCF15B00D0D270 /* tcp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tcp.h; sourceTree = "<group>"; };
+		783CE5D524FCF15B00D0D270 /* nd6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nd6.h; sourceTree = "<group>"; };
+		783CE5D624FCF15B00D0D270 /* err.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = err.h; sourceTree = "<group>"; };
+		783CE5D724FCF15B00D0D270 /* etharp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = etharp.h; sourceTree = "<group>"; };
+		783CE5D824FCF15B00D0D270 /* igmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = igmp.h; sourceTree = "<group>"; };
+		783CE5D924FCF15B00D0D270 /* netif.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = netif.h; sourceTree = "<group>"; };
+		783CE5DA24FCF15B00D0D270 /* debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = debug.h; sourceTree = "<group>"; };
+		783CE5DB24FCF15B00D0D270 /* ethip6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ethip6.h; sourceTree = "<group>"; };
+		783CE5DC24FCF15B00D0D270 /* ip4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ip4.h; sourceTree = "<group>"; };
+		783CE5DD24FCF15B00D0D270 /* icmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = icmp.h; sourceTree = "<group>"; };
+		783CE5DE24FCF15B00D0D270 /* timeouts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timeouts.h; sourceTree = "<group>"; };
+		783CE5DF24FCF15B00D0D270 /* snmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snmp.h; sourceTree = "<group>"; };
+		783CE5E024FCF15B00D0D270 /* ip4_frag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ip4_frag.h; sourceTree = "<group>"; };
+		783CE5E124FCF15B00D0D270 /* ip6_addr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ip6_addr.h; sourceTree = "<group>"; };
+		783CE5E224FCF15B00D0D270 /* inet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inet.h; sourceTree = "<group>"; };
+		783CE5E324FCF15B00D0D270 /* ip6_frag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ip6_frag.h; sourceTree = "<group>"; };
+		783CE5E424FCF15B00D0D270 /* ip4_addr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ip4_addr.h; sourceTree = "<group>"; };
+		783CE5E524FCF15B00D0D270 /* dhcp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dhcp.h; sourceTree = "<group>"; };
+		783CE5E624FCF15B00D0D270 /* autoip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autoip.h; sourceTree = "<group>"; };
+		783CE5E724FCF15B00D0D270 /* memp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memp.h; sourceTree = "<group>"; };
+		783CE5E924FCF15B00D0D270 /* tcp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tcp.h; sourceTree = "<group>"; };
+		783CE5EA24FCF15B00D0D270 /* nd6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nd6.h; sourceTree = "<group>"; };
+		783CE5EB24FCF15B00D0D270 /* etharp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = etharp.h; sourceTree = "<group>"; };
+		783CE5EC24FCF15B00D0D270 /* igmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = igmp.h; sourceTree = "<group>"; };
+		783CE5ED24FCF15B00D0D270 /* ip4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ip4.h; sourceTree = "<group>"; };
+		783CE5EE24FCF15B00D0D270 /* icmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = icmp.h; sourceTree = "<group>"; };
+		783CE5EF24FCF15B00D0D270 /* ethernet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ethernet.h; sourceTree = "<group>"; };
+		783CE5F024FCF15B00D0D270 /* dhcp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dhcp.h; sourceTree = "<group>"; };
+		783CE5F124FCF15B00D0D270 /* autoip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autoip.h; sourceTree = "<group>"; };
+		783CE5F224FCF15B00D0D270 /* ip6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ip6.h; sourceTree = "<group>"; };
+		783CE5F324FCF15B00D0D270 /* icmp6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = icmp6.h; sourceTree = "<group>"; };
+		783CE5F424FCF15B00D0D270 /* ip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ip.h; sourceTree = "<group>"; };
+		783CE5F524FCF15B00D0D270 /* udp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = udp.h; sourceTree = "<group>"; };
+		783CE5F624FCF15B00D0D270 /* mld6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mld6.h; sourceTree = "<group>"; };
+		783CE5F824FCF15B00D0D270 /* nd6_priv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nd6_priv.h; sourceTree = "<group>"; };
+		783CE5F924FCF15B00D0D270 /* tcp_priv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tcp_priv.h; sourceTree = "<group>"; };
+		783CE5FA24FCF15B00D0D270 /* memp_priv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memp_priv.h; sourceTree = "<group>"; };
+		783CE5FB24FCF15B00D0D270 /* memp_std.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memp_std.h; sourceTree = "<group>"; };
+		783CE5FC24FCF15B00D0D270 /* ip_addr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ip_addr.h; sourceTree = "<group>"; };
+		783CE5FD24FCF15B00D0D270 /* opt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opt.h; sourceTree = "<group>"; };
+		783CE5FE24FCF15B00D0D270 /* inet_chksum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inet_chksum.h; sourceTree = "<group>"; };
+		783CE5FF24FCF15B00D0D270 /* ip6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ip6.h; sourceTree = "<group>"; };
+		783CE60024FCF15B00D0D270 /* sys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sys.h; sourceTree = "<group>"; };
+		783CE60124FCF15B00D0D270 /* errno.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = errno.h; sourceTree = "<group>"; };
+		783CE60224FCF15B00D0D270 /* def.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = def.h; sourceTree = "<group>"; };
+		783CE60324FCF15B00D0D270 /* mem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mem.h; sourceTree = "<group>"; };
+		783CE60424FCF15B00D0D270 /* icmp6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = icmp6.h; sourceTree = "<group>"; };
+		783CE60524FCF15B00D0D270 /* ip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ip.h; sourceTree = "<group>"; };
+		783CE60624FCF15B00D0D270 /* init.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = init.h; sourceTree = "<group>"; };
+		783CE60724FCF15B00D0D270 /* dhcp6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dhcp6.h; sourceTree = "<group>"; };
+		783CE60924FCF15B00D0D270 /* sntp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sntp.h; sourceTree = "<group>"; };
+		783CE60A24FCF15B00D0D270 /* snmp_opts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snmp_opts.h; sourceTree = "<group>"; };
+		783CE60B24FCF15B00D0D270 /* httpd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = httpd.h; sourceTree = "<group>"; };
+		783CE60C24FCF15B00D0D270 /* snmp_scalar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snmp_scalar.h; sourceTree = "<group>"; };
+		783CE60D24FCF15B00D0D270 /* snmpv3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snmpv3.h; sourceTree = "<group>"; };
+		783CE60E24FCF15B00D0D270 /* netbiosns_opts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = netbiosns_opts.h; sourceTree = "<group>"; };
+		783CE60F24FCF15B00D0D270 /* tftp_opts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tftp_opts.h; sourceTree = "<group>"; };
+		783CE61024FCF15B00D0D270 /* snmp_mib2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snmp_mib2.h; sourceTree = "<group>"; };
+		783CE61124FCF15B00D0D270 /* mdns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mdns.h; sourceTree = "<group>"; };
+		783CE61224FCF15B00D0D270 /* netbiosns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = netbiosns.h; sourceTree = "<group>"; };
+		783CE61324FCF15B00D0D270 /* snmp_core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snmp_core.h; sourceTree = "<group>"; };
+		783CE61424FCF15B00D0D270 /* tftp_server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tftp_server.h; sourceTree = "<group>"; };
+		783CE61524FCF15B00D0D270 /* snmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snmp.h; sourceTree = "<group>"; };
+		783CE61624FCF15B00D0D270 /* snmp_table.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snmp_table.h; sourceTree = "<group>"; };
+		783CE61724FCF15B00D0D270 /* httpd_opts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = httpd_opts.h; sourceTree = "<group>"; };
+		783CE61824FCF15B00D0D270 /* lwiperf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwiperf.h; sourceTree = "<group>"; };
+		783CE61924FCF15B00D0D270 /* mdns_priv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mdns_priv.h; sourceTree = "<group>"; };
+		783CE61A24FCF15B00D0D270 /* mqtt_opts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mqtt_opts.h; sourceTree = "<group>"; };
+		783CE61B24FCF15B00D0D270 /* mqtt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mqtt.h; sourceTree = "<group>"; };
+		783CE61C24FCF15B00D0D270 /* snmp_threadsync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snmp_threadsync.h; sourceTree = "<group>"; };
+		783CE61D24FCF15B00D0D270 /* mdns_opts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mdns_opts.h; sourceTree = "<group>"; };
+		783CE61E24FCF15C00D0D270 /* fs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fs.h; sourceTree = "<group>"; };
+		783CE61F24FCF15C00D0D270 /* sntp_opts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sntp_opts.h; sourceTree = "<group>"; };
+		783CE62024FCF15C00D0D270 /* stats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stats.h; sourceTree = "<group>"; };
+		783CE62124FCF15C00D0D270 /* udp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = udp.h; sourceTree = "<group>"; };
+		783CE62224FCF15C00D0D270 /* arch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arch.h; sourceTree = "<group>"; };
+		783CE62324FCF15C00D0D270 /* mld6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mld6.h; sourceTree = "<group>"; };
+		783CE62524FCF15C00D0D270 /* etharp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = etharp.h; sourceTree = "<group>"; };
+		783CE62624FCF15C00D0D270 /* lowpan6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lowpan6.h; sourceTree = "<group>"; };
+		783CE62724FCF15C00D0D270 /* lowpan6_opts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lowpan6_opts.h; sourceTree = "<group>"; };
+		783CE62824FCF15C00D0D270 /* ethernet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ethernet.h; sourceTree = "<group>"; };
+		783CE62A24FCF15C00D0D270 /* cc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cc.h; sourceTree = "<group>"; };
+		783CE62B24FCF15C00D0D270 /* lwipopts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwipopts.h; sourceTree = "<group>"; };
+		783CE6CD24FCFEC400D0D270 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		783CE6CF24FCFEDF00D0D270 /* libresolv.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.9.tbd; path = usr/lib/libresolv.9.tbd; sourceTree = SDKROOT; };
+		783CE6D124FD03A400D0D270 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libresolv.tbd; sourceTree = DEVELOPER_DIR; };
+		783CE6D824FDE93700D0D270 /* AnClasss.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnClasss.h; sourceTree = "<group>"; };
+		783CE6D924FDE93700D0D270 /* AnClasss.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnClasss.m; sourceTree = "<group>"; };
+		783CE6E724FF4D6600D0D270 /* WUTunnelServices-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WUTunnelServices-Bridging-Header.h"; sourceTree = "<group>"; };
+		783CE6E824FF4D6600D0D270 /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		783CE6E924FF4D6600D0D270 /* HTTPConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPConnection.swift; sourceTree = "<group>"; };
+		783CE6EA24FF4D6700D0D270 /* TCPProxyServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCPProxyServer.swift; sourceTree = "<group>"; };
+		783CE6EB24FF4D6700D0D270 /* TCPConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCPConnection.swift; sourceTree = "<group>"; };
+		783CE6EC24FF4D6700D0D270 /* HTTPProxyServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPProxyServer.swift; sourceTree = "<group>"; };
+		783CE6FF250084CA00D0D270 /* lwIP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwIP.h; sourceTree = "<group>"; };
+		783CE700250084CB00D0D270 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		783CE701250084CB00D0D270 /* ZPPacketTunnel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPPacketTunnel.h; sourceTree = "<group>"; };
+		783CE702250084CB00D0D270 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		783CE703250084CB00D0D270 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		783CE704250084CB00D0D270 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		783CE705250084CB00D0D270 /* ZPPacketTunnel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPPacketTunnel.m; sourceTree = "<group>"; };
+		783CE706250084CB00D0D270 /* ZPTCPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPTCPConnection.m; sourceTree = "<group>"; };
+		783CE707250084CB00D0D270 /* ZPTCPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPTCPConnection.h; sourceTree = "<group>"; };
+		783CE709250084CB00D0D270 /* ZPPacketTunnelEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPPacketTunnelEx.h; sourceTree = "<group>"; };
+		783CE70A250084CB00D0D270 /* ZPTCPConnectionEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPTCPConnectionEx.h; sourceTree = "<group>"; };
+		783CE72425009A7C00D0D270 /* SessionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionModel.swift; sourceTree = "<group>"; };
+		783CE72725009AD400D0D270 /* IPDNSUtil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = IPDNSUtil.c; sourceTree = "<group>"; };
+		783CE72825009AD400D0D270 /* IPUDPSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPUDPSegment.m; sourceTree = "<group>"; };
+		783CE72925009AD400D0D270 /* IPPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPPacket.m; sourceTree = "<group>"; };
+		783CE72A25009AD400D0D270 /* IPDNSProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPDNSProtocol.h; sourceTree = "<group>"; };
+		783CE72B25009AD400D0D270 /* IPTCPSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPTCPSegment.h; sourceTree = "<group>"; };
+		783CE72C25009AD400D0D270 /* IPConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPConstant.h; sourceTree = "<group>"; };
+		783CE72D25009AD400D0D270 /* IPDNSMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPDNSMessage.h; sourceTree = "<group>"; };
+		783CE72E25009AD400D0D270 /* IPUDPSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPUDPSegment.h; sourceTree = "<group>"; };
+		783CE72F25009AD400D0D270 /* IPDNSUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPDNSUtil.h; sourceTree = "<group>"; };
+		783CE73025009AD400D0D270 /* IPPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPPacket.h; sourceTree = "<group>"; };
+		783CE73125009AD400D0D270 /* IPDNSMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPDNSMessage.m; sourceTree = "<group>"; };
+		783CE73225009AD400D0D270 /* IPConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPConstant.m; sourceTree = "<group>"; };
+		783CE73325009AD400D0D270 /* IPTCPSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPTCPSegment.m; sourceTree = "<group>"; };
+		783CE73425009AD400D0D270 /* IPDNSProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPDNSProtocol.m; sourceTree = "<group>"; };
 		7844EF2824BEAF060011FB14 /* WuPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WuPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7844EF2B24BEAF060011FB14 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7844EF2C24BEAF060011FB14 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7844EF2E24BEAF060011FB14 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		7844EF2F24BEAF060011FB14 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		7844EF3124BEAF060011FB14 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		7844EF3224BEAF060011FB14 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7844EF3524BEAF060011FB14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -104,14 +474,68 @@
 		788A03B424D1170100B01AE7 /* NSString+code.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+code.m"; sourceTree = "<group>"; };
 		788A03B724D148C400B01AE7 /* NSString+Tun_code.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Tun_code.h"; sourceTree = "<group>"; };
 		788A03B824D148C400B01AE7 /* NSString+Tun_code.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Tun_code.m"; sourceTree = "<group>"; };
+		78C3BCDF24EA700D0089F23C /* DDFileLogger+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDFileLogger+Internal.h"; sourceTree = "<group>"; };
+		78C3BCE024EA700D0089F23C /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
+		78C3BCE124EA700D0089F23C /* DDOSLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDOSLogger.m; sourceTree = "<group>"; };
+		78C3BCE324EA700D0089F23C /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLog.h; sourceTree = "<group>"; };
+		78C3BCE424EA700D0089F23C /* DDMultiFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMultiFormatter.h; sourceTree = "<group>"; };
+		78C3BCE524EA700D0089F23C /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
+		78C3BCE624EA700D0089F23C /* DDLoggerNames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLoggerNames.h; sourceTree = "<group>"; };
+		78C3BCE724EA700D0089F23C /* DDLogMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLogMacros.h; sourceTree = "<group>"; };
+		78C3BCE824EA700D0089F23C /* DDASLLogCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogCapture.h; sourceTree = "<group>"; };
+		78C3BCE924EA700D0089F23C /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFileLogger.h; sourceTree = "<group>"; };
+		78C3BCEA24EA700D0089F23C /* DDContextFilterLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDContextFilterLogFormatter.h; sourceTree = "<group>"; };
+		78C3BCEB24EA700D0089F23C /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTTYLogger.h; sourceTree = "<group>"; };
+		78C3BCEC24EA700D0089F23C /* DDAssertMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAssertMacros.h; sourceTree = "<group>"; };
+		78C3BCED24EA700D0089F23C /* DDFileLogger+Buffering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDFileLogger+Buffering.h"; sourceTree = "<group>"; };
+		78C3BCEE24EA700D0089F23C /* DDDispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDDispatchQueueLogFormatter.h; sourceTree = "<group>"; };
+		78C3BCEF24EA700D0089F23C /* DDOSLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDOSLogger.h; sourceTree = "<group>"; };
+		78C3BCF024EA700D0089F23C /* DDLog+LOGV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDLog+LOGV.h"; sourceTree = "<group>"; };
+		78C3BCF124EA700D0089F23C /* CLIColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLIColor.h; sourceTree = "<group>"; };
+		78C3BCF224EA700D0089F23C /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
+		78C3BCF324EA700D0089F23C /* DDASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogger.m; sourceTree = "<group>"; };
+		78C3BCF524EA700D0089F23C /* CLIColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLIColor.m; sourceTree = "<group>"; };
+		78C3BCF724EA700D0089F23C /* DDContextFilterLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDContextFilterLogFormatter.m; sourceTree = "<group>"; };
+		78C3BCF824EA700D0089F23C /* DDDispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDDispatchQueueLogFormatter.m; sourceTree = "<group>"; };
+		78C3BCF924EA700D0089F23C /* DDFileLogger+Buffering.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DDFileLogger+Buffering.m"; sourceTree = "<group>"; };
+		78C3BCFA24EA700D0089F23C /* DDMultiFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMultiFormatter.m; sourceTree = "<group>"; };
+		78C3BCFB24EA700D0089F23C /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLog.m; sourceTree = "<group>"; };
+		78C3BCFD24EA700D0089F23C /* DDLegacyMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLegacyMacros.h; sourceTree = "<group>"; };
+		78C3BCFE24EA700D0089F23C /* CocoaLumberjack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaLumberjack.h; sourceTree = "<group>"; };
+		78C3BCFF24EA700D0089F23C /* DDLoggerNames.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLoggerNames.m; sourceTree = "<group>"; };
+		78C3BD0024EA700D0089F23C /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
+		78C3BD0124EA700D0089F23C /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileLogger.m; sourceTree = "<group>"; };
+		78C3BD0224EA700D0089F23C /* DDASLLogCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogCapture.m; sourceTree = "<group>"; };
+		78C3BD4324EA82790089F23C /* UIForLumberjack-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIForLumberjack-Prefix.pch"; sourceTree = "<group>"; };
+		78C3BD4424EA82790089F23C /* UIForLumberjack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIForLumberjack.m; sourceTree = "<group>"; };
+		78C3BD4524EA82790089F23C /* UIForLumberjack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIForLumberjack.h; sourceTree = "<group>"; };
+		78C3BD4724EA83460089F23C /* Header.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.pch; sourceTree = "<group>"; };
+		84B6A9F312F33E1AE729C3E8 /* Pods-WuPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WuPlayer.release.xcconfig"; path = "Target Support Files/Pods-WuPlayer/Pods-WuPlayer.release.xcconfig"; sourceTree = "<group>"; };
+		A10A6ADE30E6353C20ACBF39 /* Pods-WuPlayerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WuPlayerTests.debug.xcconfig"; path = "Target Support Files/Pods-WuPlayerTests/Pods-WuPlayerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A3DD8FA47DF634EDCFA7E885 /* Pods_WuPlayer_WuPlayerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WuPlayer_WuPlayerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC1D2354FD16C34114CF9206 /* Pods_WuPlayerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WuPlayerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3D223FF44FCF9284D2DA84B /* Pods-WuPlayerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WuPlayerTests.release.xcconfig"; path = "Target Support Files/Pods-WuPlayerTests/Pods-WuPlayerTests.release.xcconfig"; sourceTree = "<group>"; };
+		EC10553E38CFFAED1C28FB76 /* Pods-WuPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WuPlayer.debug.xcconfig"; path = "Target Support Files/Pods-WuPlayer/Pods-WuPlayer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		783CE59E24FCF12000D0D270 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				783CE6D224FD03AC00D0D270 /* libresolv.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7844EF2524BEAF060011FB14 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7844EF6324BEAF1D0011FB14 /* NetworkExtension.framework in Frameworks */,
+				783CE5A824FCF12100D0D270 /* IPStack.framework in Frameworks */,
+				783CE6D024FCFEE700D0D270 /* libresolv.9.tbd in Frameworks */,
+				10EB7999F7B5311AAEC21BA1 /* Pods_WuPlayer.framework in Frameworks */,
+				783CE6CE24FCFECD00D0D270 /* libresolv.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +543,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7D9DF32977F20602D9A1189 /* Pods_WuPlayerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +551,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				985A002D6D7CB1653713F292 /* Pods_WuPlayer_WuPlayerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,12 +560,275 @@
 			buildActionMask = 2147483647;
 			files = (
 				78B0A5F524CEA396004B5413 /* NetworkExtension.framework in Frameworks */,
+				783CE6FA24FF6E0E00D0D270 /* IPStack.framework in Frameworks */,
+				AFD07EEBC63FCD903329E969 /* Pods_WUTunnelServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		59F254E59FAD94D988495867 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				668446B53B06AF93DA882252 /* Pods-WUTunnelServices.debug.xcconfig */,
+				685D9D6CFD0DB690E88CE4A1 /* Pods-WUTunnelServices.release.xcconfig */,
+				EC10553E38CFFAED1C28FB76 /* Pods-WuPlayer.debug.xcconfig */,
+				84B6A9F312F33E1AE729C3E8 /* Pods-WuPlayer.release.xcconfig */,
+				4C958A8769E4C2CE20993D83 /* Pods-WuPlayer-WuPlayerUITests.debug.xcconfig */,
+				23F703E0E04ACB41F17AFA63 /* Pods-WuPlayer-WuPlayerUITests.release.xcconfig */,
+				A10A6ADE30E6353C20ACBF39 /* Pods-WuPlayerTests.debug.xcconfig */,
+				C3D223FF44FCF9284D2DA84B /* Pods-WuPlayerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		783CE5A224FCF12100D0D270 /* IPStack */ = {
+			isa = PBXGroup;
+			children = (
+				783CE72625009AD400D0D270 /* IpAnalyse */,
+				783CE5A424FCF12100D0D270 /* Info.plist */,
+				783CE5A324FCF12100D0D270 /* IPStack.h */,
+				783CE703250084CB00D0D270 /* GCDAsyncSocket.h */,
+				783CE700250084CB00D0D270 /* GCDAsyncSocket.m */,
+				783CE704250084CB00D0D270 /* GCDAsyncUdpSocket.h */,
+				783CE702250084CB00D0D270 /* GCDAsyncUdpSocket.m */,
+				783CE6FF250084CA00D0D270 /* lwIP.h */,
+				783CE701250084CB00D0D270 /* ZPPacketTunnel.h */,
+				783CE705250084CB00D0D270 /* ZPPacketTunnel.m */,
+				783CE709250084CB00D0D270 /* ZPPacketTunnelEx.h */,
+				783CE707250084CB00D0D270 /* ZPTCPConnection.h */,
+				783CE706250084CB00D0D270 /* ZPTCPConnection.m */,
+				783CE70A250084CB00D0D270 /* ZPTCPConnectionEx.h */,
+				783CE5AD24FCF15B00D0D270 /* lwIP */,
+			);
+			path = IPStack;
+			sourceTree = "<group>";
+		};
+		783CE5AD24FCF15B00D0D270 /* lwIP */ = {
+			isa = PBXGroup;
+			children = (
+				783CE5AE24FCF15B00D0D270 /* core */,
+				783CE5D124FCF15B00D0D270 /* include */,
+				783CE62B24FCF15C00D0D270 /* lwipopts.h */,
+			);
+			path = lwIP;
+			sourceTree = "<group>";
+		};
+		783CE5AE24FCF15B00D0D270 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				783CE5AF24FCF15B00D0D270 /* memp.c */,
+				783CE5B024FCF15B00D0D270 /* sys.c */,
+				783CE5B124FCF15B00D0D270 /* inet_chksum.c */,
+				783CE5B224FCF15B00D0D270 /* tcp_out.c */,
+				783CE5B324FCF15B00D0D270 /* ip.c */,
+				783CE5B424FCF15B00D0D270 /* init.c */,
+				783CE5B524FCF15B00D0D270 /* mem.c */,
+				783CE5B624FCF15B00D0D270 /* def.c */,
+				783CE5B724FCF15B00D0D270 /* udp.c */,
+				783CE5B824FCF15B00D0D270 /* stats.c */,
+				783CE5B924FCF15B00D0D270 /* tcp_in.c */,
+				783CE5BA24FCF15B00D0D270 /* ipv4 */,
+				783CE5C324FCF15B00D0D270 /* netif.c */,
+				783CE5C424FCF15B00D0D270 /* tcp.c */,
+				783CE5C524FCF15B00D0D270 /* pbuf.c */,
+				783CE5C624FCF15B00D0D270 /* timeouts.c */,
+				783CE5C724FCF15B00D0D270 /* ipv6 */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		783CE5BA24FCF15B00D0D270 /* ipv4 */ = {
+			isa = PBXGroup;
+			children = (
+				783CE5BB24FCF15B00D0D270 /* autoip.c */,
+				783CE5BC24FCF15B00D0D270 /* dhcp.c */,
+				783CE5BD24FCF15B00D0D270 /* igmp.c */,
+				783CE5BE24FCF15B00D0D270 /* etharp.c */,
+				783CE5BF24FCF15B00D0D270 /* icmp.c */,
+				783CE5C024FCF15B00D0D270 /* ip4.c */,
+				783CE5C124FCF15B00D0D270 /* ip4_frag.c */,
+				783CE5C224FCF15B00D0D270 /* ip4_addr.c */,
+			);
+			path = ipv4;
+			sourceTree = "<group>";
+		};
+		783CE5C724FCF15B00D0D270 /* ipv6 */ = {
+			isa = PBXGroup;
+			children = (
+				783CE5C824FCF15B00D0D270 /* ip6.c */,
+				783CE5C924FCF15B00D0D270 /* icmp6.c */,
+				783CE5CA24FCF15B00D0D270 /* mld6.c */,
+				783CE5CB24FCF15B00D0D270 /* dhcp6.c */,
+				783CE5CC24FCF15B00D0D270 /* ethip6.c */,
+				783CE5CD24FCF15B00D0D270 /* nd6.c */,
+				783CE5CE24FCF15B00D0D270 /* inet6.c */,
+				783CE5CF24FCF15B00D0D270 /* ip6_addr.c */,
+				783CE5D024FCF15B00D0D270 /* ip6_frag.c */,
+			);
+			path = ipv6;
+			sourceTree = "<group>";
+		};
+		783CE5D124FCF15B00D0D270 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				783CE5D224FCF15B00D0D270 /* lwip */,
+				783CE62424FCF15C00D0D270 /* netif */,
+				783CE62924FCF15C00D0D270 /* arch */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		783CE5D224FCF15B00D0D270 /* lwip */ = {
+			isa = PBXGroup;
+			children = (
+				783CE5D324FCF15B00D0D270 /* pbuf.h */,
+				783CE5D424FCF15B00D0D270 /* tcp.h */,
+				783CE5D524FCF15B00D0D270 /* nd6.h */,
+				783CE5D624FCF15B00D0D270 /* err.h */,
+				783CE5D724FCF15B00D0D270 /* etharp.h */,
+				783CE5D824FCF15B00D0D270 /* igmp.h */,
+				783CE5D924FCF15B00D0D270 /* netif.h */,
+				783CE5DA24FCF15B00D0D270 /* debug.h */,
+				783CE5DB24FCF15B00D0D270 /* ethip6.h */,
+				783CE5DC24FCF15B00D0D270 /* ip4.h */,
+				783CE5DD24FCF15B00D0D270 /* icmp.h */,
+				783CE5DE24FCF15B00D0D270 /* timeouts.h */,
+				783CE5DF24FCF15B00D0D270 /* snmp.h */,
+				783CE5E024FCF15B00D0D270 /* ip4_frag.h */,
+				783CE5E124FCF15B00D0D270 /* ip6_addr.h */,
+				783CE5E224FCF15B00D0D270 /* inet.h */,
+				783CE5E324FCF15B00D0D270 /* ip6_frag.h */,
+				783CE5E424FCF15B00D0D270 /* ip4_addr.h */,
+				783CE5E524FCF15B00D0D270 /* dhcp.h */,
+				783CE5E624FCF15B00D0D270 /* autoip.h */,
+				783CE5E724FCF15B00D0D270 /* memp.h */,
+				783CE5E824FCF15B00D0D270 /* prot */,
+				783CE5F724FCF15B00D0D270 /* priv */,
+				783CE5FC24FCF15B00D0D270 /* ip_addr.h */,
+				783CE5FD24FCF15B00D0D270 /* opt.h */,
+				783CE5FE24FCF15B00D0D270 /* inet_chksum.h */,
+				783CE5FF24FCF15B00D0D270 /* ip6.h */,
+				783CE60024FCF15B00D0D270 /* sys.h */,
+				783CE60124FCF15B00D0D270 /* errno.h */,
+				783CE60224FCF15B00D0D270 /* def.h */,
+				783CE60324FCF15B00D0D270 /* mem.h */,
+				783CE60424FCF15B00D0D270 /* icmp6.h */,
+				783CE60524FCF15B00D0D270 /* ip.h */,
+				783CE60624FCF15B00D0D270 /* init.h */,
+				783CE60724FCF15B00D0D270 /* dhcp6.h */,
+				783CE60824FCF15B00D0D270 /* apps */,
+				783CE62024FCF15C00D0D270 /* stats.h */,
+				783CE62124FCF15C00D0D270 /* udp.h */,
+				783CE62224FCF15C00D0D270 /* arch.h */,
+				783CE62324FCF15C00D0D270 /* mld6.h */,
+			);
+			path = lwip;
+			sourceTree = "<group>";
+		};
+		783CE5E824FCF15B00D0D270 /* prot */ = {
+			isa = PBXGroup;
+			children = (
+				783CE5E924FCF15B00D0D270 /* tcp.h */,
+				783CE5EA24FCF15B00D0D270 /* nd6.h */,
+				783CE5EB24FCF15B00D0D270 /* etharp.h */,
+				783CE5EC24FCF15B00D0D270 /* igmp.h */,
+				783CE5ED24FCF15B00D0D270 /* ip4.h */,
+				783CE5EE24FCF15B00D0D270 /* icmp.h */,
+				783CE5EF24FCF15B00D0D270 /* ethernet.h */,
+				783CE5F024FCF15B00D0D270 /* dhcp.h */,
+				783CE5F124FCF15B00D0D270 /* autoip.h */,
+				783CE5F224FCF15B00D0D270 /* ip6.h */,
+				783CE5F324FCF15B00D0D270 /* icmp6.h */,
+				783CE5F424FCF15B00D0D270 /* ip.h */,
+				783CE5F524FCF15B00D0D270 /* udp.h */,
+				783CE5F624FCF15B00D0D270 /* mld6.h */,
+			);
+			path = prot;
+			sourceTree = "<group>";
+		};
+		783CE5F724FCF15B00D0D270 /* priv */ = {
+			isa = PBXGroup;
+			children = (
+				783CE5F824FCF15B00D0D270 /* nd6_priv.h */,
+				783CE5F924FCF15B00D0D270 /* tcp_priv.h */,
+				783CE5FA24FCF15B00D0D270 /* memp_priv.h */,
+				783CE5FB24FCF15B00D0D270 /* memp_std.h */,
+			);
+			path = priv;
+			sourceTree = "<group>";
+		};
+		783CE60824FCF15B00D0D270 /* apps */ = {
+			isa = PBXGroup;
+			children = (
+				783CE60924FCF15B00D0D270 /* sntp.h */,
+				783CE60A24FCF15B00D0D270 /* snmp_opts.h */,
+				783CE60B24FCF15B00D0D270 /* httpd.h */,
+				783CE60C24FCF15B00D0D270 /* snmp_scalar.h */,
+				783CE60D24FCF15B00D0D270 /* snmpv3.h */,
+				783CE60E24FCF15B00D0D270 /* netbiosns_opts.h */,
+				783CE60F24FCF15B00D0D270 /* tftp_opts.h */,
+				783CE61024FCF15B00D0D270 /* snmp_mib2.h */,
+				783CE61124FCF15B00D0D270 /* mdns.h */,
+				783CE61224FCF15B00D0D270 /* netbiosns.h */,
+				783CE61324FCF15B00D0D270 /* snmp_core.h */,
+				783CE61424FCF15B00D0D270 /* tftp_server.h */,
+				783CE61524FCF15B00D0D270 /* snmp.h */,
+				783CE61624FCF15B00D0D270 /* snmp_table.h */,
+				783CE61724FCF15B00D0D270 /* httpd_opts.h */,
+				783CE61824FCF15B00D0D270 /* lwiperf.h */,
+				783CE61924FCF15B00D0D270 /* mdns_priv.h */,
+				783CE61A24FCF15B00D0D270 /* mqtt_opts.h */,
+				783CE61B24FCF15B00D0D270 /* mqtt.h */,
+				783CE61C24FCF15B00D0D270 /* snmp_threadsync.h */,
+				783CE61D24FCF15B00D0D270 /* mdns_opts.h */,
+				783CE61E24FCF15C00D0D270 /* fs.h */,
+				783CE61F24FCF15C00D0D270 /* sntp_opts.h */,
+			);
+			path = apps;
+			sourceTree = "<group>";
+		};
+		783CE62424FCF15C00D0D270 /* netif */ = {
+			isa = PBXGroup;
+			children = (
+				783CE62524FCF15C00D0D270 /* etharp.h */,
+				783CE62624FCF15C00D0D270 /* lowpan6.h */,
+				783CE62724FCF15C00D0D270 /* lowpan6_opts.h */,
+				783CE62824FCF15C00D0D270 /* ethernet.h */,
+			);
+			path = netif;
+			sourceTree = "<group>";
+		};
+		783CE62924FCF15C00D0D270 /* arch */ = {
+			isa = PBXGroup;
+			children = (
+				783CE62A24FCF15C00D0D270 /* cc.h */,
+			);
+			path = arch;
+			sourceTree = "<group>";
+		};
+		783CE72625009AD400D0D270 /* IpAnalyse */ = {
+			isa = PBXGroup;
+			children = (
+				783CE72C25009AD400D0D270 /* IPConstant.h */,
+				783CE73225009AD400D0D270 /* IPConstant.m */,
+				783CE72D25009AD400D0D270 /* IPDNSMessage.h */,
+				783CE73125009AD400D0D270 /* IPDNSMessage.m */,
+				783CE72A25009AD400D0D270 /* IPDNSProtocol.h */,
+				783CE73425009AD400D0D270 /* IPDNSProtocol.m */,
+				783CE72725009AD400D0D270 /* IPDNSUtil.c */,
+				783CE72F25009AD400D0D270 /* IPDNSUtil.h */,
+				783CE73025009AD400D0D270 /* IPPacket.h */,
+				783CE72925009AD400D0D270 /* IPPacket.m */,
+				783CE72B25009AD400D0D270 /* IPTCPSegment.h */,
+				783CE73325009AD400D0D270 /* IPTCPSegment.m */,
+				783CE72E25009AD400D0D270 /* IPUDPSegment.h */,
+				783CE72825009AD400D0D270 /* IPUDPSegment.m */,
+			);
+			path = IpAnalyse;
+			sourceTree = "<group>";
+		};
 		7844EF1F24BEAF060011FB14 = {
 			isa = PBXGroup;
 			children = (
@@ -147,8 +836,10 @@
 				7844EF4624BEAF090011FB14 /* WuPlayerTests */,
 				7844EF5124BEAF090011FB14 /* WuPlayerUITests */,
 				7844F85924CAAFD20011FB14 /* WUTunnelServices */,
+				783CE5A224FCF12100D0D270 /* IPStack */,
 				7844EF2924BEAF060011FB14 /* Products */,
 				7844EF6124BEAF1D0011FB14 /* Frameworks */,
+				59F254E59FAD94D988495867 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -159,6 +850,7 @@
 				7844EF4324BEAF090011FB14 /* WuPlayerTests.xctest */,
 				7844EF4E24BEAF090011FB14 /* WuPlayerUITests.xctest */,
 				7844F85824CAAFD20011FB14 /* WUTunnelServices.appex */,
+				783CE5A124FCF12000D0D270 /* IPStack.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -166,13 +858,15 @@
 		7844EF2A24BEAF060011FB14 /* WuPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				78C3BD4224EA82790089F23C /* UIForLumberjack */,
+				78C3BCDE24EA700D0089F23C /* CocoaLumberjack */,
 				7844EF6024BEAF1D0011FB14 /* WuPlayer.entitlements */,
 				7844EF2B24BEAF060011FB14 /* AppDelegate.h */,
 				7844EF2C24BEAF060011FB14 /* AppDelegate.m */,
-				7844EF2E24BEAF060011FB14 /* SceneDelegate.h */,
-				7844EF2F24BEAF060011FB14 /* SceneDelegate.m */,
+				782E019A24EF7A99004AE421 /* TestProtocol.h */,
 				7844EF3124BEAF060011FB14 /* ViewController.h */,
 				7844EF3224BEAF060011FB14 /* ViewController.m */,
+				78C3BD4724EA83460089F23C /* Header.pch */,
 				788A03B324D1170100B01AE7 /* NSString+code.h */,
 				788A03B424D1170100B01AE7 /* NSString+code.m */,
 				7844EF7824BEAF820011FB14 /* XDXVPNManagerModel.h */,
@@ -213,7 +907,14 @@
 		7844EF6124BEAF1D0011FB14 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				783CE6D124FD03A400D0D270 /* libresolv.tbd */,
+				783CE6CF24FCFEDF00D0D270 /* libresolv.9.tbd */,
+				783CE6CD24FCFEC400D0D270 /* libresolv.tbd */,
 				7844EF6224BEAF1D0011FB14 /* NetworkExtension.framework */,
+				67AE7F0A6817B4A911A4965F /* Pods_WUTunnelServices.framework */,
+				246F4208A03F92EF5D43D4C6 /* Pods_WuPlayer.framework */,
+				A3DD8FA47DF634EDCFA7E885 /* Pods_WuPlayer_WuPlayerUITests.framework */,
+				AC1D2354FD16C34114CF9206 /* Pods_WuPlayerTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -223,8 +924,17 @@
 			children = (
 				7844F85C24CAAFD20011FB14 /* PacketTunnelProvider.h */,
 				7844F85D24CAAFD20011FB14 /* PacketTunnelProvider.m */,
+				783CE6D824FDE93700D0D270 /* AnClasss.h */,
+				783CE6D924FDE93700D0D270 /* AnClasss.m */,
 				788A03B724D148C400B01AE7 /* NSString+Tun_code.h */,
 				788A03B824D148C400B01AE7 /* NSString+Tun_code.m */,
+				783CE6E924FF4D6600D0D270 /* HTTPConnection.swift */,
+				783CE6EC24FF4D6700D0D270 /* HTTPProxyServer.swift */,
+				783CE6E824FF4D6600D0D270 /* SessionManager.swift */,
+				783CE6EB24FF4D6700D0D270 /* TCPConnection.swift */,
+				783CE6EA24FF4D6700D0D270 /* TCPProxyServer.swift */,
+				783CE72425009A7C00D0D270 /* SessionModel.swift */,
+				783CE6E724FF4D6600D0D270 /* WUTunnelServices-Bridging-Header.h */,
 				7844F85F24CAAFD20011FB14 /* Info.plist */,
 				7844F85A24CAAFD20011FB14 /* Supporting Files */,
 			);
@@ -239,22 +949,233 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		78C3BCDE24EA700D0089F23C /* CocoaLumberjack */ = {
+			isa = PBXGroup;
+			children = (
+				78C3BCF424EA700D0089F23C /* CLI */,
+				78C3BD0024EA700D0089F23C /* DDAbstractDatabaseLogger.m */,
+				78C3BD0224EA700D0089F23C /* DDASLLogCapture.m */,
+				78C3BCF324EA700D0089F23C /* DDASLLogger.m */,
+				78C3BD0124EA700D0089F23C /* DDFileLogger.m */,
+				78C3BCDF24EA700D0089F23C /* DDFileLogger+Internal.h */,
+				78C3BCFB24EA700D0089F23C /* DDLog.m */,
+				78C3BCFF24EA700D0089F23C /* DDLoggerNames.m */,
+				78C3BCE124EA700D0089F23C /* DDOSLogger.m */,
+				78C3BCE024EA700D0089F23C /* DDTTYLogger.m */,
+				78C3BCF624EA700D0089F23C /* Extensions */,
+				78C3BCE224EA700D0089F23C /* include */,
+				78C3BCFC24EA700D0089F23C /* Supporting Files */,
+			);
+			path = CocoaLumberjack;
+			sourceTree = "<group>";
+		};
+		78C3BCE224EA700D0089F23C /* include */ = {
+			isa = PBXGroup;
+			children = (
+				78C3BCE324EA700D0089F23C /* DDLog.h */,
+				78C3BCE424EA700D0089F23C /* DDMultiFormatter.h */,
+				78C3BCE524EA700D0089F23C /* DDAbstractDatabaseLogger.h */,
+				78C3BCE624EA700D0089F23C /* DDLoggerNames.h */,
+				78C3BCE724EA700D0089F23C /* DDLogMacros.h */,
+				78C3BCE824EA700D0089F23C /* DDASLLogCapture.h */,
+				78C3BCE924EA700D0089F23C /* DDFileLogger.h */,
+				78C3BCEA24EA700D0089F23C /* DDContextFilterLogFormatter.h */,
+				78C3BCEB24EA700D0089F23C /* DDTTYLogger.h */,
+				78C3BCEC24EA700D0089F23C /* DDAssertMacros.h */,
+				78C3BCED24EA700D0089F23C /* DDFileLogger+Buffering.h */,
+				78C3BCEE24EA700D0089F23C /* DDDispatchQueueLogFormatter.h */,
+				78C3BCEF24EA700D0089F23C /* DDOSLogger.h */,
+				78C3BCF024EA700D0089F23C /* DDLog+LOGV.h */,
+				78C3BCF124EA700D0089F23C /* CLIColor.h */,
+				78C3BCF224EA700D0089F23C /* DDASLLogger.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		78C3BCF424EA700D0089F23C /* CLI */ = {
+			isa = PBXGroup;
+			children = (
+				78C3BCF524EA700D0089F23C /* CLIColor.m */,
+			);
+			path = CLI;
+			sourceTree = "<group>";
+		};
+		78C3BCF624EA700D0089F23C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				78C3BCF724EA700D0089F23C /* DDContextFilterLogFormatter.m */,
+				78C3BCF824EA700D0089F23C /* DDDispatchQueueLogFormatter.m */,
+				78C3BCF924EA700D0089F23C /* DDFileLogger+Buffering.m */,
+				78C3BCFA24EA700D0089F23C /* DDMultiFormatter.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		78C3BCFC24EA700D0089F23C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				78C3BCFD24EA700D0089F23C /* DDLegacyMacros.h */,
+				78C3BCFE24EA700D0089F23C /* CocoaLumberjack.h */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		78C3BD4224EA82790089F23C /* UIForLumberjack */ = {
+			isa = PBXGroup;
+			children = (
+				78C3BD4324EA82790089F23C /* UIForLumberjack-Prefix.pch */,
+				78C3BD4424EA82790089F23C /* UIForLumberjack.m */,
+				78C3BD4524EA82790089F23C /* UIForLumberjack.h */,
+			);
+			path = UIForLumberjack;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		783CE59C24FCF12000D0D270 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				783CE73A25009AD400D0D270 /* IPConstant.h in Headers */,
+				783CE69024FCF15C00D0D270 /* mqtt_opts.h in Headers */,
+				783CE7172500857D00D0D270 /* ZPPacketTunnel.h in Headers */,
+				783CE713250084CC00D0D270 /* ZPTCPConnection.h in Headers */,
+				783CE70F250084CC00D0D270 /* GCDAsyncSocket.h in Headers */,
+				783CE69224FCF15C00D0D270 /* snmp_threadsync.h in Headers */,
+				783CE68B24FCF15C00D0D270 /* snmp.h in Headers */,
+				783CE73E25009AD400D0D270 /* IPPacket.h in Headers */,
+				783CE67324FCF15C00D0D270 /* ip_addr.h in Headers */,
+				783CE66324FCF15C00D0D270 /* etharp.h in Headers */,
+				783CE66724FCF15C00D0D270 /* ethernet.h in Headers */,
+				783CE67824FCF15C00D0D270 /* errno.h in Headers */,
+				783CE68124FCF15C00D0D270 /* httpd.h in Headers */,
+				783CE67D24FCF15C00D0D270 /* init.h in Headers */,
+				783CE66624FCF15C00D0D270 /* icmp.h in Headers */,
+				783CE65824FCF15C00D0D270 /* snmp.h in Headers */,
+				783CE69724FCF15C00D0D270 /* udp.h in Headers */,
+				783CE73925009AD400D0D270 /* IPTCPSegment.h in Headers */,
+				783CE66924FCF15C00D0D270 /* autoip.h in Headers */,
+				783CE68F24FCF15C00D0D270 /* mdns_priv.h in Headers */,
+				783CE67424FCF15C00D0D270 /* opt.h in Headers */,
+				783CE68324FCF15C00D0D270 /* snmpv3.h in Headers */,
+				783CE65D24FCF15C00D0D270 /* ip4_addr.h in Headers */,
+				783CE68424FCF15C00D0D270 /* netbiosns_opts.h in Headers */,
+				783CE68724FCF15C00D0D270 /* mdns.h in Headers */,
+				783CE710250084CC00D0D270 /* GCDAsyncUdpSocket.h in Headers */,
+				783CE68C24FCF15C00D0D270 /* snmp_table.h in Headers */,
+				783CE65724FCF15C00D0D270 /* timeouts.h in Headers */,
+				783CE69F24FCF15C00D0D270 /* lwipopts.h in Headers */,
+				783CE69624FCF15C00D0D270 /* stats.h in Headers */,
+				783CE66224FCF15C00D0D270 /* nd6.h in Headers */,
+				783CE65524FCF15C00D0D270 /* ip4.h in Headers */,
+				783CE66124FCF15C00D0D270 /* tcp.h in Headers */,
+				783CE67E24FCF15C00D0D270 /* dhcp6.h in Headers */,
+				783CE67724FCF15C00D0D270 /* sys.h in Headers */,
+				783CE67524FCF15C00D0D270 /* inet_chksum.h in Headers */,
+				783CE66A24FCF15C00D0D270 /* ip6.h in Headers */,
+				783CE73D25009AD400D0D270 /* IPDNSUtil.h in Headers */,
+				783CE65324FCF15C00D0D270 /* debug.h in Headers */,
+				783CE68A24FCF15C00D0D270 /* tftp_server.h in Headers */,
+				783CE68D24FCF15C00D0D270 /* httpd_opts.h in Headers */,
+				783CE65F24FCF15C00D0D270 /* autoip.h in Headers */,
+				783CE64F24FCF15C00D0D270 /* err.h in Headers */,
+				783CE69C24FCF15C00D0D270 /* lowpan6_opts.h in Headers */,
+				783CE70B250084CB00D0D270 /* lwIP.h in Headers */,
+				783CE68624FCF15C00D0D270 /* snmp_mib2.h in Headers */,
+				783CE65924FCF15C00D0D270 /* ip4_frag.h in Headers */,
+				783CE715250084CC00D0D270 /* ZPPacketTunnelEx.h in Headers */,
+				783CE66B24FCF15C00D0D270 /* icmp6.h in Headers */,
+				783CE69524FCF15C00D0D270 /* sntp_opts.h in Headers */,
+				783CE69324FCF15C00D0D270 /* mdns_opts.h in Headers */,
+				783CE64D24FCF15C00D0D270 /* tcp.h in Headers */,
+				783CE66C24FCF15C00D0D270 /* ip.h in Headers */,
+				783CE66D24FCF15C00D0D270 /* udp.h in Headers */,
+				783CE68524FCF15C00D0D270 /* tftp_opts.h in Headers */,
+				783CE67624FCF15C00D0D270 /* ip6.h in Headers */,
+				783CE67F24FCF15C00D0D270 /* sntp.h in Headers */,
+				783CE65024FCF15C00D0D270 /* etharp.h in Headers */,
+				783CE66824FCF15C00D0D270 /* dhcp.h in Headers */,
+				783CE69124FCF15C00D0D270 /* mqtt.h in Headers */,
+				783CE68924FCF15C00D0D270 /* snmp_core.h in Headers */,
+				783CE66424FCF15C00D0D270 /* igmp.h in Headers */,
+				783CE69A24FCF15C00D0D270 /* etharp.h in Headers */,
+				783CE67124FCF15C00D0D270 /* memp_priv.h in Headers */,
+				783CE65624FCF15C00D0D270 /* icmp.h in Headers */,
+				783CE69824FCF15C00D0D270 /* arch.h in Headers */,
+				783CE66524FCF15C00D0D270 /* ip4.h in Headers */,
+				783CE69E24FCF15C00D0D270 /* cc.h in Headers */,
+				783CE67224FCF15C00D0D270 /* memp_std.h in Headers */,
+				783CE66024FCF15C00D0D270 /* memp.h in Headers */,
+				783CE67C24FCF15C00D0D270 /* ip.h in Headers */,
+				783CE67024FCF15C00D0D270 /* tcp_priv.h in Headers */,
+				783CE69924FCF15C00D0D270 /* mld6.h in Headers */,
+				783CE73C25009AD400D0D270 /* IPUDPSegment.h in Headers */,
+				783CE73B25009AD400D0D270 /* IPDNSMessage.h in Headers */,
+				783CE66F24FCF15C00D0D270 /* nd6_priv.h in Headers */,
+				783CE69424FCF15C00D0D270 /* fs.h in Headers */,
+				783CE67924FCF15C00D0D270 /* def.h in Headers */,
+				783CE68824FCF15C00D0D270 /* netbiosns.h in Headers */,
+				783CE69D24FCF15C00D0D270 /* ethernet.h in Headers */,
+				783CE65A24FCF15C00D0D270 /* ip6_addr.h in Headers */,
+				783CE65424FCF15C00D0D270 /* ethip6.h in Headers */,
+				783CE68024FCF15C00D0D270 /* snmp_opts.h in Headers */,
+				783CE69B24FCF15C00D0D270 /* lowpan6.h in Headers */,
+				783CE65224FCF15C00D0D270 /* netif.h in Headers */,
+				783CE65124FCF15C00D0D270 /* igmp.h in Headers */,
+				783CE68224FCF15C00D0D270 /* snmp_scalar.h in Headers */,
+				783CE716250084CC00D0D270 /* ZPTCPConnectionEx.h in Headers */,
+				783CE5A524FCF12100D0D270 /* IPStack.h in Headers */,
+				783CE65E24FCF15C00D0D270 /* dhcp.h in Headers */,
+				783CE67A24FCF15C00D0D270 /* mem.h in Headers */,
+				783CE66E24FCF15C00D0D270 /* mld6.h in Headers */,
+				783CE65C24FCF15C00D0D270 /* ip6_frag.h in Headers */,
+				783CE67B24FCF15C00D0D270 /* icmp6.h in Headers */,
+				783CE68E24FCF15C00D0D270 /* lwiperf.h in Headers */,
+				783CE73825009AD400D0D270 /* IPDNSProtocol.h in Headers */,
+				783CE64C24FCF15C00D0D270 /* pbuf.h in Headers */,
+				783CE65B24FCF15C00D0D270 /* inet.h in Headers */,
+				783CE64E24FCF15C00D0D270 /* nd6.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		783CE5A024FCF12000D0D270 /* IPStack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 783CE5AA24FCF12100D0D270 /* Build configuration list for PBXNativeTarget "IPStack" */;
+			buildPhases = (
+				783CE59C24FCF12000D0D270 /* Headers */,
+				783CE59D24FCF12000D0D270 /* Sources */,
+				783CE59E24FCF12000D0D270 /* Frameworks */,
+				783CE59F24FCF12000D0D270 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IPStack;
+			productName = IPStack;
+			productReference = 783CE5A124FCF12000D0D270 /* IPStack.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		7844EF2724BEAF060011FB14 /* WuPlayer */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7844EF5724BEAF090011FB14 /* Build configuration list for PBXNativeTarget "WuPlayer" */;
 			buildPhases = (
+				03090904564007DF13983173 /* [CP] Check Pods Manifest.lock */,
 				7844EF2424BEAF060011FB14 /* Sources */,
 				7844EF2524BEAF060011FB14 /* Frameworks */,
 				7844EF2624BEAF060011FB14 /* Resources */,
 				7844EF7624BEAF5E0011FB14 /* Embed App Extensions */,
+				783CE58A24FCEEF800D0D270 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				7844F86124CAAFD20011FB14 /* PBXTargetDependency */,
+				783CE5A724FCF12100D0D270 /* PBXTargetDependency */,
 			);
 			name = WuPlayer;
 			productName = WuPlayer;
@@ -265,6 +1186,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7844EF5A24BEAF090011FB14 /* Build configuration list for PBXNativeTarget "WuPlayerTests" */;
 			buildPhases = (
+				359291B019A0BFEBE635FCAB /* [CP] Check Pods Manifest.lock */,
 				7844EF3F24BEAF090011FB14 /* Sources */,
 				7844EF4024BEAF090011FB14 /* Frameworks */,
 				7844EF4124BEAF090011FB14 /* Resources */,
@@ -283,9 +1205,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7844EF5D24BEAF090011FB14 /* Build configuration list for PBXNativeTarget "WuPlayerUITests" */;
 			buildPhases = (
+				1BC9A984011BC707D5D39D9D /* [CP] Check Pods Manifest.lock */,
 				7844EF4A24BEAF090011FB14 /* Sources */,
 				7844EF4B24BEAF090011FB14 /* Frameworks */,
 				7844EF4C24BEAF090011FB14 /* Resources */,
+				4E1B9EA9B16F6547298AD006 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -301,13 +1225,16 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7844F86324CAAFD20011FB14 /* Build configuration list for PBXNativeTarget "WUTunnelServices" */;
 			buildPhases = (
+				8B179BD9BCC483DDA868EBD9 /* [CP] Check Pods Manifest.lock */,
 				7844F85424CAAFD20011FB14 /* Sources */,
 				7844F85524CAAFD20011FB14 /* Frameworks */,
 				7844F85624CAAFD20011FB14 /* Resources */,
+				783CE6FE24FF6E0E00D0D270 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				783CE6FD24FF6E0E00D0D270 /* PBXTargetDependency */,
 			);
 			name = WUTunnelServices;
 			productName = WUTunnelServices;
@@ -323,6 +1250,10 @@
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = WU;
 				TargetAttributes = {
+					783CE5A024FCF12000D0D270 = {
+						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
+					};
 					7844EF2724BEAF060011FB14 = {
 						CreatedOnToolsVersion = 11.3;
 						LastSwiftMigration = 1130;
@@ -337,6 +1268,7 @@
 					};
 					7844F85724CAAFD20011FB14 = {
 						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -357,11 +1289,19 @@
 				7844EF4224BEAF090011FB14 /* WuPlayerTests */,
 				7844EF4D24BEAF090011FB14 /* WuPlayerUITests */,
 				7844F85724CAAFD20011FB14 /* WUTunnelServices */,
+				783CE5A024FCF12000D0D270 /* IPStack */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		783CE59F24FCF12000D0D270 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7844EF2624BEAF060011FB14 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -395,20 +1335,191 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		03090904564007DF13983173 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WuPlayer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1BC9A984011BC707D5D39D9D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WuPlayer-WuPlayerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		359291B019A0BFEBE635FCAB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WuPlayerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E1B9EA9B16F6547298AD006 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WuPlayer-WuPlayerUITests/Pods-WuPlayer-WuPlayerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WuPlayer-WuPlayerUITests/Pods-WuPlayer-WuPlayerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WuPlayer-WuPlayerUITests/Pods-WuPlayer-WuPlayerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B179BD9BCC483DDA868EBD9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WUTunnelServices-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		783CE59D24FCF12000D0D270 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				783CE64524FCF15C00D0D270 /* mld6.c in Sources */,
+				783CE64724FCF15C00D0D270 /* ethip6.c in Sources */,
+				783CE64124FCF15C00D0D270 /* pbuf.c in Sources */,
+				783CE74225009AD400D0D270 /* IPDNSProtocol.m in Sources */,
+				783CE63B24FCF15C00D0D270 /* icmp.c in Sources */,
+				783CE73625009AD400D0D270 /* IPUDPSegment.m in Sources */,
+				783CE63D24FCF15C00D0D270 /* ip4_frag.c in Sources */,
+				783CE63924FCF15C00D0D270 /* igmp.c in Sources */,
+				783CE63824FCF15C00D0D270 /* dhcp.c in Sources */,
+				783CE63C24FCF15C00D0D270 /* ip4.c in Sources */,
+				783CE62F24FCF15C00D0D270 /* tcp_out.c in Sources */,
+				783CE74125009AD400D0D270 /* IPTCPSegment.m in Sources */,
+				783CE70C250084CB00D0D270 /* GCDAsyncSocket.m in Sources */,
+				783CE711250084CC00D0D270 /* ZPPacketTunnel.m in Sources */,
+				783CE64B24FCF15C00D0D270 /* ip6_frag.c in Sources */,
+				783CE73725009AD400D0D270 /* IPPacket.m in Sources */,
+				783CE63E24FCF15C00D0D270 /* ip4_addr.c in Sources */,
+				783CE64624FCF15C00D0D270 /* dhcp6.c in Sources */,
+				783CE74025009AD400D0D270 /* IPConstant.m in Sources */,
+				783CE62C24FCF15C00D0D270 /* memp.c in Sources */,
+				783CE63224FCF15C00D0D270 /* mem.c in Sources */,
+				783CE64024FCF15C00D0D270 /* tcp.c in Sources */,
+				783CE63424FCF15C00D0D270 /* udp.c in Sources */,
+				783CE73F25009AD400D0D270 /* IPDNSMessage.m in Sources */,
+				783CE64224FCF15C00D0D270 /* timeouts.c in Sources */,
+				783CE62D24FCF15C00D0D270 /* sys.c in Sources */,
+				783CE63624FCF15C00D0D270 /* tcp_in.c in Sources */,
+				783CE64424FCF15C00D0D270 /* icmp6.c in Sources */,
+				783CE63124FCF15C00D0D270 /* init.c in Sources */,
+				783CE70E250084CB00D0D270 /* GCDAsyncUdpSocket.m in Sources */,
+				783CE73525009AD400D0D270 /* IPDNSUtil.c in Sources */,
+				783CE63724FCF15C00D0D270 /* autoip.c in Sources */,
+				783CE63A24FCF15C00D0D270 /* etharp.c in Sources */,
+				783CE64824FCF15C00D0D270 /* nd6.c in Sources */,
+				783CE63324FCF15C00D0D270 /* def.c in Sources */,
+				783CE64924FCF15C00D0D270 /* inet6.c in Sources */,
+				783CE712250084CC00D0D270 /* ZPTCPConnection.m in Sources */,
+				783CE63524FCF15C00D0D270 /* stats.c in Sources */,
+				783CE63024FCF15C00D0D270 /* ip.c in Sources */,
+				783CE64324FCF15C00D0D270 /* ip6.c in Sources */,
+				783CE63F24FCF15C00D0D270 /* netif.c in Sources */,
+				783CE64A24FCF15C00D0D270 /* ip6_addr.c in Sources */,
+				783CE62E24FCF15C00D0D270 /* inet_chksum.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7844EF2424BEAF060011FB14 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7844EF3324BEAF060011FB14 /* ViewController.m in Sources */,
+				78C3BD0924EA700D0089F23C /* DDFileLogger+Buffering.m in Sources */,
 				7844EF7D24BEAF910011FB14 /* NetManger.mm in Sources */,
 				7844EF2D24BEAF060011FB14 /* AppDelegate.m in Sources */,
+				78C3BD0A24EA700D0089F23C /* DDMultiFormatter.m in Sources */,
+				78C3BD0524EA700D0089F23C /* DDASLLogger.m in Sources */,
+				78C3BD0B24EA700D0089F23C /* DDLog.m in Sources */,
+				78C3BD0324EA700D0089F23C /* DDTTYLogger.m in Sources */,
+				78C3BD0D24EA700D0089F23C /* DDAbstractDatabaseLogger.m in Sources */,
+				78C3BD0F24EA700D0089F23C /* DDASLLogCapture.m in Sources */,
+				78C3BD0E24EA700D0089F23C /* DDFileLogger.m in Sources */,
 				7844EF8324BEE0390011FB14 /* XDXVPNManager.mm in Sources */,
+				78C3BD0724EA700D0089F23C /* DDContextFilterLogFormatter.m in Sources */,
+				78C3BD4624EA82790089F23C /* UIForLumberjack.m in Sources */,
 				788A03B624D1481A00B01AE7 /* NSString+code.m in Sources */,
 				7844EF8024BEAFAA0011FB14 /* NSMutableDictionary+Safe.m in Sources */,
+				78C3BD0C24EA700D0089F23C /* DDLoggerNames.m in Sources */,
+				78C3BD0824EA700D0089F23C /* DDDispatchQueueLogFormatter.m in Sources */,
+				78C3BD0624EA700D0089F23C /* CLIColor.m in Sources */,
+				78C3BD0424EA700D0089F23C /* DDOSLogger.m in Sources */,
 				7844EF7A24BEAF820011FB14 /* XDXVPNManagerModel.m in Sources */,
 				7844EF3E24BEAF090011FB14 /* main.m in Sources */,
-				7844EF3024BEAF060011FB14 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,14 +1543,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				783CE6DA24FDE93700D0D270 /* AnClasss.m in Sources */,
+				783CE6F124FF4D6700D0D270 /* HTTPProxyServer.swift in Sources */,
+				783CE72525009A7C00D0D270 /* SessionModel.swift in Sources */,
+				783CE6F024FF4D6700D0D270 /* TCPConnection.swift in Sources */,
 				788A03B924D148C400B01AE7 /* NSString+Tun_code.m in Sources */,
+				783CE6ED24FF4D6700D0D270 /* SessionManager.swift in Sources */,
 				7844F85E24CAAFD20011FB14 /* PacketTunnelProvider.m in Sources */,
+				783CE6EE24FF4D6700D0D270 /* HTTPConnection.swift in Sources */,
+				783CE6EF24FF4D6700D0D270 /* TCPProxyServer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		783CE5A724FCF12100D0D270 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 783CE5A024FCF12000D0D270 /* IPStack */;
+			targetProxy = 783CE5A624FCF12100D0D270 /* PBXContainerItemProxy */;
+		};
+		783CE6FD24FF6E0E00D0D270 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 783CE5A024FCF12000D0D270 /* IPStack */;
+			targetProxy = 783CE6FC24FF6E0E00D0D270 /* PBXContainerItemProxy */;
+		};
 		7844EF4524BEAF090011FB14 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7844EF2724BEAF060011FB14 /* WuPlayer */;
@@ -477,6 +1605,69 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		783CE5AB24FCF12100D0D270 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = UHREU5H63B;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = IPStack/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MicroWU.IPStack;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/IPStack/lwIP/include";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		783CE5AC24FCF12100D0D270 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = UHREU5H63B;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = IPStack/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MicroWU.IPStack;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/IPStack/lwIP/include";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		7844EF5524BEAF090011FB14 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -589,19 +1780,24 @@
 		};
 		7844EF5824BEAF090011FB14 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC10553E38CFFAED1C28FB76 /* Pods-WuPlayer.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = WuPlayer/WuPlayer.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = UHREU5H63B;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WuPlayer/Header.pch";
 				INFOPLIST_FILE = WuPlayer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.microwu.qos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "QoS-Develop";
@@ -614,19 +1810,24 @@
 		};
 		7844EF5924BEAF090011FB14 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84B6A9F312F33E1AE729C3E8 /* Pods-WuPlayer.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = WuPlayer/WuPlayer.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = UHREU5H63B;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WuPlayer/Header.pch";
 				INFOPLIST_FILE = WuPlayer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.microwu.qos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "QoS-Develop";
@@ -638,6 +1839,7 @@
 		};
 		7844EF5B24BEAF090011FB14 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A10A6ADE30E6353C20ACBF39 /* Pods-WuPlayerTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -658,6 +1860,7 @@
 		};
 		7844EF5C24BEAF090011FB14 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3D223FF44FCF9284D2DA84B /* Pods-WuPlayerTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -678,6 +1881,7 @@
 		};
 		7844EF5E24BEAF090011FB14 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C958A8769E4C2CE20993D83 /* Pods-WuPlayer-WuPlayerUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UHREU5H63B;
@@ -696,6 +1900,7 @@
 		};
 		7844EF5F24BEAF090011FB14 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23F703E0E04ACB41F17AFA63 /* Pods-WuPlayer-WuPlayerUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UHREU5H63B;
@@ -714,7 +1919,9 @@
 		};
 		7844F86424CAAFD20011FB14 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 668446B53B06AF93DA882252 /* Pods-WUTunnelServices.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = WUTunnelServices/WUTunnelServices.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
@@ -729,13 +1936,18 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "QoS-Extension-Develop";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "WUTunnelServices/WUTunnelServices-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		7844F86524CAAFD20011FB14 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 685D9D6CFD0DB690E88CE4A1 /* Pods-WUTunnelServices.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = WUTunnelServices/WUTunnelServices.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
@@ -750,6 +1962,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "QoS-Extension-Develop";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "WUTunnelServices/WUTunnelServices-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -757,6 +1971,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		783CE5AA24FCF12100D0D270 /* Build configuration list for PBXNativeTarget "IPStack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				783CE5AB24FCF12100D0D270 /* Debug */,
+				783CE5AC24FCF12100D0D270 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7844EF2324BEAF060011FB14 /* Build configuration list for PBXProject "WuPlayer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

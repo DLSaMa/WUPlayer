@@ -15,6 +15,8 @@
 
 @property (nonatomic, strong) XDXVPNManagerModel *vpnConfigurationModel;
 
+
+
 @end
 
 @implementation NetManger
@@ -37,7 +39,7 @@
     self.vpnConfigurationModel.subnet           = model.subnet;
     self.vpnConfigurationModel.dns              = model.dns;
     self.vpnConfigurationModel.tunnelBundleId   = model.tunnelBundleId;
-    NSLog(@"XDXVPNManager", "The vpn configuration tunnelBundleId is %s ,port is %s, server is %s, ip is %s, subnet is %s, mtu is %s, dns is %s",model.tunnelBundleId.UTF8String, model.serverPort.UTF8String, model.serverAddress.UTF8String, model.ip.UTF8String, model.subnet.UTF8String, model.mtu.UTF8String, model.dns.UTF8String);
+    NSLog(@"XDXVPNManager,The vpn configuration tunnelBundleId is %s ,port is %s, server is %s, ip is %s, subnet is %s, mtu is %s, dns is %s",model.tunnelBundleId.UTF8String, model.serverPort.UTF8String, model.serverAddress.UTF8String, model.ip.UTF8String, model.subnet.UTF8String, model.mtu.UTF8String, model.dns.UTF8String);
     
     
     [self applyVpnConfiguration];
@@ -50,13 +52,13 @@
         
         if (error != 0) {
             const char *errorInfo = [NSString stringWithFormat:@"%@",error].UTF8String;
-            NSLog(@"XDXVPNManager", "Start VPN Failed - %s !",errorInfo);
+            NSLog(@"XDXVPNManager,Start VPN Failed - %s !",errorInfo);
         }else {
-            NSLog(@"XDXVPNManager", "Start VPN Success !");
+            NSLog(@"XDXVPNManager,Start VPN Success !");
             return YES;
         }
     }else {
-        NSLog(@"XDXVPNManager", "Start VPN - The current connect status isn't NEVPNStatusDisconnected !");
+        NSLog(@"XDXVPNManager,Start VPN - The current connect status isn't NEVPNStatusDisconnected !");
     }
     
     return NO;
@@ -65,13 +67,13 @@
 - (BOOL)stopVPN {
     if (self.vpnManager.connection.status == NEVPNStatusConnected) {
         [self.vpnManager.connection stopVPNTunnel];
-        NSLog(@"XDXVPNManager", "StopVPN Success - The current connect status is Connected.");
+        NSLog(@"XDXVPNManager,StopVPN Success - The current connect status is Connected.");
         return YES;
     }else  if (self.vpnManager.connection.status == NEVPNStatusConnecting) {
         [self.vpnManager.connection stopVPNTunnel];
-        NSLog(@"XDXVPNManager", "StopVPN Success - The current connect status is Connecting.");
+        NSLog(@"XDXVPNManager,StopVPN Success - The current connect status is Connecting.");
     }else {
-        NSLog(@"XDXVPNManager", "StopVPN Failed - The current connect status isn't Connected or Connecting !");
+        NSLog(@"XDXVPNManager,StopVPN Failed - The current connect status isn't Connected or Connecting !");
     }
     
     return NO;
@@ -86,16 +88,16 @@
             if (self.delegate && [self.delegate respondsToSelector:@selector(loadFromPreferencesComplete)]) {
                 [self.delegate loadFromPreferencesComplete];
             }
-            NSLog(@"XDXVPNManager", "The vpn already configured. We will use it.");
+            NSLog(@"XDXVPNManager,The vpn already configured. We will use it.");
             return;
         }else {
-            NSLog(@"XDXVPNManager", "The vpn config is NULL, we will config it later.");
+            NSLog(@"XDXVPNManager,The vpn config is NULL, we will config it later.");
         }
         
         [self.vpnManager loadFromPreferencesWithCompletionHandler:^(NSError * _Nullable error) {
             if (error != 0) {
                 const char *errorInfo = [NSString stringWithFormat:@"%@",error].UTF8String;
-                NSLog(@"XDXVPNManager", "applyVpnConfiguration loadFromPreferencesWithCompletionHandler Failed - %s !",errorInfo);
+                NSLog(@"XDXVPNManager,applyVpnConfiguration loadFromPreferencesWithCompletionHandler Failed - %s !",errorInfo);
                 return;
             }
             
@@ -119,10 +121,10 @@
             [self.vpnManager saveToPreferencesWithCompletionHandler:^(NSError * _Nullable error) {
                 if (error != 0) {
                     const char *errorInfo = [NSString stringWithFormat:@"%@",error].UTF8String;
-                    NSLog(@"XDXVPNManager", "applyVpnConfiguration saveToPreferencesWithCompletionHandler Failed - %s !",errorInfo);
+                    NSLog(@"XDXVPNManager,applyVpnConfiguration saveToPreferencesWithCompletionHandler Failed - %s !",errorInfo);
                 }else {
                     [self applyVpnConfiguration];
-                    NSLog(@"XDXVPNManager", "Save vpn configuration successfully !");
+                    NSLog(@"XDXVPNManager,Save vpn configuration successfully !");
                 }
 
             }];
