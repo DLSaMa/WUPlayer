@@ -89,9 +89,14 @@
     NSString * str = @"http://182.92.2.5:8805/write?msg=";
     NSString * urlStr = [NSString stringWithFormat:@"%@%@",str,message?message:@""];
     
+
     //    NSString *strPic = [urlStr stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLUserAllowedCharacterSet]];
     
     
+
+//    NSString *strPic = [urlStr stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLUserAllowedCharacterSet]];
+ 
+
     NSCharacterSet *set = [[NSCharacterSet characterSetWithCharactersInString:@"!$&'()*+,-./:;=?@_~%#[]"] invertedSet];
     NSString *resultString = [urlStr stringByAddingPercentEncodingWithAllowedCharacters: set];
     
@@ -104,6 +109,9 @@
             NSLog(@"%@",response.description);
         }
     }] resume];
+    
+    
+ 
 }
 
 
